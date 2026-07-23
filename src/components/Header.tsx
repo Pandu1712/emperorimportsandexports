@@ -1,7 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logoAsset from "@/assets/emperor-logo.png.asset.json";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -21,7 +20,7 @@ export function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
         <Link to="/" className="flex items-center gap-3">
           <img
-            src={logoAsset.url}
+            src="/logo.png"
             alt="Emperor Exports & Imports"
             className="h-12 w-12 object-contain"
           />
