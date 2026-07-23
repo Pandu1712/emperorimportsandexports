@@ -20,10 +20,16 @@ export function Header() {
     <header className="sticky top-0 z-40 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
         <Link to="/" className="flex items-center gap-3">
-          <img src={logoAsset.url} alt="Emperor Exports & Imports" className="h-12 w-12 object-contain" />
+          <img
+            src={logoAsset.url}
+            alt="Emperor Exports & Imports"
+            className="h-12 w-12 object-contain"
+          />
           <div className="leading-tight">
             <div className="font-display text-xl font-bold text-ink tracking-wide">EMPEROR</div>
-            <div className="text-[10px] uppercase tracking-[0.2em] text-gold-deep">Exports & Imports</div>
+            <div className="text-[10px] uppercase tracking-[0.2em] text-gold-deep">
+              Exports & Imports
+            </div>
           </div>
         </Link>
         <nav className="hidden lg:flex items-center gap-7">
@@ -45,11 +51,7 @@ export function Header() {
         >
           Get a Quote
         </a>
-        <button
-          onClick={() => setOpen(!open)}
-          className="lg:hidden p-2 text-ink"
-          aria-label="Menu"
-        >
+        <button onClick={() => setOpen(!open)} className="lg:hidden p-2 text-ink" aria-label="Menu">
           {open ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>

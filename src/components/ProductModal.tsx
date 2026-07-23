@@ -2,7 +2,13 @@ import { useEffect } from "react";
 import { X } from "lucide-react";
 import type { Product } from "@/data/products";
 
-export function ProductModal({ product, onClose }: { product: Product | null; onClose: () => void }) {
+export function ProductModal({
+  product,
+  onClose,
+}: {
+  product: Product | null;
+  onClose: () => void;
+}) {
   useEffect(() => {
     if (!product) return;
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
@@ -17,7 +23,7 @@ export function ProductModal({ product, onClose }: { product: Product | null; on
   if (!product) return null;
 
   const waLink = `https://wa.me/919010444415?text=${encodeURIComponent(
-    `Hello Emperor Exports, I'd like a quote for ${product.name}.`
+    `Hello Emperor Exports, I'd like a quote for ${product.name}.`,
   )}`;
 
   return (
@@ -49,8 +55,13 @@ export function ProductModal({ product, onClose }: { product: Product | null; on
             <p className="mt-5 text-sm leading-relaxed text-foreground/80">{product.description}</p>
             <div className="mt-6 grid grid-cols-2 gap-3">
               {product.specs.map((s) => (
-                <div key={s.label} className="rounded-lg border border-border bg-secondary/50 px-3 py-2">
-                  <div className="text-[10px] uppercase tracking-wider text-muted-foreground">{s.label}</div>
+                <div
+                  key={s.label}
+                  className="rounded-lg border border-border bg-secondary/50 px-3 py-2"
+                >
+                  <div className="text-[10px] uppercase tracking-wider text-muted-foreground">
+                    {s.label}
+                  </div>
                   <div className="text-sm font-semibold text-ink">{s.value}</div>
                 </div>
               ))}
