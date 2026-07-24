@@ -32,7 +32,7 @@ export function ProductModal({
       onClick={onClose}
     >
       <div
-        className="relative bg-background rounded-2xl shadow-gold max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+        className="relative bg-background rounded-2xl shadow-gold max-w-4xl w-full max-h-[85vh] overflow-y-auto overscroll-contain"
         onClick={(e) => e.stopPropagation()}
       >
         <button

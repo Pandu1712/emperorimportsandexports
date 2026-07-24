@@ -1,0 +1,1 @@
+var e=`/assets/why-emperor-globe-BEmTbwEx.png`;export{e as t};

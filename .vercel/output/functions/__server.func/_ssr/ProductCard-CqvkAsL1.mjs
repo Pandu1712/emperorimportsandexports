@@ -1,8 +1,8 @@
 import { r as __toESM } from "../_runtime.mjs";
 import { n as require_react, r as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
-import { B as ArrowRight, D as Flame, b as Leaf, c as Sprout, n as Wheat, o as TreePalm, t as X } from "../_libs/lucide-react.mjs";
-import { i as turmeric_default, n as coconuts_default, r as rice_default, t as chillies_default } from "./coconuts-D9RXxadM.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/ProductCard-Da3YHChV.js
+import { O as Flame, V as ArrowRight, c as Sprout, n as Wheat, o as TreePalm, t as X, x as Leaf } from "../_libs/lucide-react.mjs";
+import { n as turmeric_default, t as rice_default } from "./rice-B7b4Dz-c.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/ProductCard-CqvkAsL1.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var products = [
@@ -37,7 +37,7 @@ var products = [
 		id: "coconuts",
 		name: "Coconuts (Fresh & Semi-Husked)",
 		tagline: "Tropical freshness, harvest to hold",
-		image: coconuts_default,
+		image: "/assets/coconuts-CI6jKAqj.jpg",
 		description: "Hand-selected mature coconuts, available fresh whole or semi-husked for extended shelf life. Sweet water content, thick kernel, and consistent size grading for wholesale and retail buyers.",
 		specs: [
 			{
@@ -145,7 +145,7 @@ var products = [
 		id: "green-chillies",
 		name: "Green Chillies",
 		tagline: "Vibrant, pungent, farm-picked",
-		image: chillies_default,
+		image: "/assets/chillies-B4FOZcHz.jpg",
 		description: "Hand-picked fresh green chillies with high pungency and glossy skin. Sorted for uniform length and colour, ideal for fresh markets, sauce manufacturers, and food processors.",
 		specs: [
 			{
@@ -186,7 +186,7 @@ function ProductModal({ product, onClose }) {
 		className: "fixed inset-0 z-[60] flex items-center justify-center bg-ink/70 backdrop-blur-sm p-4 animate-in fade-in",
 		onClick: onClose,
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			className: "relative bg-background rounded-2xl shadow-gold max-w-4xl w-full max-h-[90vh] overflow-y-auto",
+			className: "relative bg-background rounded-2xl shadow-gold max-w-4xl w-full max-h-[85vh] overflow-y-auto overscroll-contain",
 			onClick: (e) => e.stopPropagation(),
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 				onClick: onClose,
@@ -291,7 +291,7 @@ function ProductCard({ product, onClick }) {
 	const Icon = getProductIcon(product.id);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 		onClick,
-		className: "group text-left bg-white rounded-[2.5rem] overflow-hidden border border-black/[0.04] shadow-[0_15px_45px_rgba(0,0,0,0.02)] hover:shadow-[0_30px_70px_rgba(0,0,0,0.06)] hover:-translate-y-2 transition-all duration-500 flex flex-col justify-between min-h-[440px]",
+		className: "group text-left bg-white rounded-[2.5rem] overflow-hidden border border-black/[0.04] shadow-[0_15px_45px_rgba(0,0,0,0.02)] md:hover:shadow-[0_30px_70px_rgba(0,0,0,0.06)] md:hover:-translate-y-2 transition-all duration-500 flex flex-col justify-between min-h-[440px]",
 		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "relative w-full aspect-[4/3] overflow-hidden bg-ink",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {

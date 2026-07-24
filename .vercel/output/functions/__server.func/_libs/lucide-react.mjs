@@ -567,6 +567,26 @@ var Leaf = createLucideIcon("leaf", [["path", {
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
+var Lightbulb = createLucideIcon("lightbulb", [
+	["path", {
+		d: "M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5",
+		key: "1gvzjb"
+	}],
+	["path", {
+		d: "M9 18h6",
+		key: "x1upvd"
+	}],
+	["path", {
+		d: "M10 22h4",
+		key: "ceow96"
+	}]
+]);
+/**
+* @license lucide-react v0.575.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
 var Linkedin = createLucideIcon("linkedin", [
 	["path", {
 		d: "M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z",
@@ -939,4 +959,4 @@ var X = createLucideIcon("x", [["path", {
 	key: "d8bk6v"
 }]]);
 //#endregion
-export { Eye as A, ArrowRight as B, Heart as C, Flame as D, Globe as E, Calendar as F, Building as I, Building2 as L, Clock as M, CircleCheck as N, FileText as O, Castle as P, Award as R, Instagram as S, Handshake as T, MapPin as _, Trees as a, Leaf as b, Sprout as c, ShieldCheck as d, Play as f, MessageCircle as g, Mountain as h, Truck as i, Compass as j, Facebook as k, Ship as l, Package as m, Wheat as n, TreePalm as o, Phone as p, Users as r, Target as s, X as t, Shield as u, Mail as v, Headphones as w, LayoutGrid as x, Linkedin as y, ArrowUp as z };
+export { Facebook as A, ArrowUp as B, Instagram as C, Globe as D, Handshake as E, Castle as F, Calendar as I, Building as L, Compass as M, Clock as N, Flame as O, CircleCheck as P, Building2 as R, LayoutGrid as S, Headphones as T, ArrowRight as V, MapPin as _, Trees as a, Lightbulb as b, Sprout as c, ShieldCheck as d, Play as f, MessageCircle as g, Mountain as h, Truck as i, Eye as j, FileText as k, Ship as l, Package as m, Wheat as n, TreePalm as o, Phone as p, Users as r, Target as s, X as t, Shield as u, Mail as v, Heart as w, Leaf as x, Linkedin as y, Award as z };

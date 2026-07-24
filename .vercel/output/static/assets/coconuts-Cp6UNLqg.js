@@ -1,1 +1,0 @@
-var e=`/assets/turmeric-DUP-aOe6.jpg`,t=`/assets/rice-Dlnczw7e.jpg`,n=`/assets/chillies-B4FOZcHz.jpg`,r=`/assets/coconuts-CI6jKAqj.jpg`;export{e as i,n,t as r,r as t};
