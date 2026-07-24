@@ -1,6 +1,19 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { PageHero } from "./about";
-import { Sprout, PackageCheck, FileText, Ship, Truck, Handshake } from "lucide-react";
+import { useState, useEffect } from "react";
+import {
+  Sprout,
+  Award,
+  FileText,
+  Package,
+  Ship,
+  Handshake,
+  ArrowRight,
+  Shield,
+  Globe,
+  Clock,
+  Headphones,
+} from "lucide-react";
+import heroImg from "@/assets/hero-export.jpg";
 
 export const Route = createFileRoute("/export-process")({
   head: () => ({
@@ -25,7 +38,7 @@ const steps = [
     d: "Direct procurement from trusted farmers and cooperatives across Andhra Pradesh, Tamil Nadu and Telangana.",
   },
   {
-    icon: PackageCheck,
+    icon: Award,
     t: "Quality Check",
     d: "Multi-stage inspection — visual grading, moisture, sortex cleaning, and lab tests where applicable.",
   },
@@ -35,7 +48,7 @@ const steps = [
     d: "Invoice, packing list, phytosanitary certificate, certificate of origin, and buyer-specific paperwork.",
   },
   {
-    icon: Truck,
+    icon: Package,
     t: "Packing & Loading",
     d: "Export-grade packing, palletisation, and stuffing at ICD or CFS with photographic proof.",
   },
@@ -51,37 +64,166 @@ const steps = [
   },
 ];
 
+const pillars = [
+  {
+    icon: Shield,
+    t: "Buyer-First Approach",
+    d: "Your requirements, our priority.",
+  },
+  {
+    icon: Globe,
+    t: "Global Standards",
+    d: "Quality, compliance & reliability.",
+  },
+  {
+    icon: Clock,
+    t: "On-Time Delivery",
+    d: "Committed to your timelines.",
+  },
+  {
+    icon: Headphones,
+    t: "End-to-End Support",
+    d: "We're with you, every step.",
+  },
+];
+
 function ExportProcess() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsLoaded(true), 50);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <>
-      <PageHero
-        eyebrow="How We Work"
-        title="Farm to shore, six clear steps."
-        subtitle="Transparent, documented, and buyer-first — from the moment you enquire to the moment your container clears customs."
-      />
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
-        <ol className="relative border-l-2 border-gold/30 ml-4 md:ml-0 md:border-l-0 md:grid md:grid-cols-2 md:gap-8">
-          {steps.map((s, i) => (
-            <li key={s.t} className="mb-10 md:mb-0 pl-8 md:pl-0 relative">
-              <div className="md:hidden absolute -left-[13px] top-1 h-6 w-6 rounded-full bg-gradient-gold flex items-center justify-center text-xs font-bold text-ink">
-                {i + 1}
-              </div>
-              <div className="rounded-2xl border border-border bg-card p-7 md:p-8 h-full">
-                <div className="flex items-center gap-4">
-                  <div className="h-12 w-12 rounded-xl bg-gradient-gold flex items-center justify-center text-ink shadow-gold">
-                    <s.icon size={22} />
-                  </div>
-                  <div className="text-xs uppercase tracking-[0.25em] text-gold-deep font-semibold">
-                    Step {i + 1}
-                  </div>
-                </div>
-                <h3 className="mt-4 font-display text-2xl text-ink">{s.t}</h3>
-                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{s.d}</p>
-              </div>
-            </li>
-          ))}
-        </ol>
+    <div className="animate-fade-in-up">
+      {/* Hero Banner Box */}
+      <section className="relative overflow-hidden bg-[#021d10] text-white py-24 px-8 md:px-16 text-center rounded-b-[2.5rem] z-10">
+        {/* Background logistics image - bright on the edges, faded in the middle */}
+        <img
+          src={heroImg}
+          alt="Port terminal logistics background"
+          className="absolute inset-0 h-full w-full object-cover opacity-85 pointer-events-none select-none"
+        />
+        {/* Gradient mask to darken center for text legibility and show bright image on left/right */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#021d10]/20 via-[#021d10]/95 to-[#021d10]/25 pointer-events-none select-none" />
+
+        {/* Hero Content */}
+        <div className="relative z-10 max-w-3xl mx-auto">
+          {/* Subtitle with gold lines */}
+          <div className="flex items-center justify-center gap-3">
+            <div className="h-[1px] w-8 bg-[#b45309]/50" />
+            <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold-soft">
+              How We Work
+            </span>
+            <div className="h-[1px] w-8 bg-[#b45309]/50" />
+          </div>
+
+          {/* Title */}
+          <h1 className="mt-5 font-display text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
+            Farm to shore, <span className="text-[#b45309]">six clear steps.</span>
+          </h1>
+
+          {/* Description */}
+          <p className="mt-6 text-sm md:text-base text-white/70 max-w-2xl mx-auto leading-relaxed">
+            Transparent, documented, and buyer-first — from the moment you enquire to the moment
+            your container clears customs.
+          </p>
+        </div>
       </section>
-    </>
+
+      {/* Six Step Cards Grid */}
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 relative">
+        {/* Curved connecting loop path between Card 3 (Row 1) and Card 4 (Row 2) on Desktop */}
+        <div className="absolute inset-0 pointer-events-none hidden lg:block z-0 px-8 py-20">
+          <div className="relative w-full h-full">
+            <svg
+              className="absolute inset-0 w-full h-full"
+              viewBox="0 0 100 100"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M 90,26 C 99,26 99,50 90,50 L 10,50 C 1,50 1,74 10,74"
+                fill="none"
+                stroke="#b45309"
+                strokeWidth="1"
+                strokeDasharray="4 4"
+                className="opacity-25"
+              />
+            </svg>
+          </div>
+        </div>
+
+        {/* The Cards Grid */}
+        <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-12 lg:gap-x-14">
+          {steps.map((s, idx) => {
+            const Icon = s.icon;
+            const stepNum = `0${idx + 1}`;
+            return (
+              <div
+                key={s.t}
+                className={`group relative bg-white rounded-[2rem] border border-black/[0.04] shadow-[0_12px_40px_rgba(0,0,0,0.01)] hover:shadow-[0_24px_50px_rgba(0,0,0,0.04)] hover:-translate-y-1 transition-all duration-500 p-8 flex items-start gap-5 ${
+                  isLoaded ? "animate-fade-in-up" : "opacity-0"
+                }`}
+                style={{ animationDelay: `${idx * 100}ms` }}
+              >
+                {/* Step Number Circle */}
+                <div className="h-8 w-8 rounded-full border border-[#f5e3d1] bg-[#fdf8f2] flex items-center justify-center text-xs font-bold text-[#b45309] shrink-0">
+                  {stepNum}
+                </div>
+
+                {/* Square Icon Badge */}
+                <div className="h-11 w-11 rounded-xl bg-[#b45309] text-white flex items-center justify-center shrink-0 shadow-sm transition-transform duration-300 group-hover:scale-105">
+                  <Icon size={20} />
+                </div>
+
+                {/* Text Details */}
+                <div className="flex-1">
+                  <h3 className="font-display text-2xl font-bold tracking-tight text-ink leading-snug">
+                    {s.t}
+                  </h3>
+                  <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+                    {s.d}
+                  </p>
+                </div>
+
+                {/* Horizontal Connector Arrow Circle (desktop only) */}
+                {idx !== 2 && idx !== 5 && (
+                  <div className="hidden lg:flex absolute right-[-32px] top-1/2 -translate-y-1/2 z-20 h-7 w-7 rounded-full bg-[#b45309] text-white items-center justify-center shadow-md transition-transform duration-300 group-hover:scale-110">
+                    <ArrowRight size={12} />
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* Bottom Feature Bar */}
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-24">
+        <div className="rounded-[2rem] border border-[#f2e2d2] bg-[#fdfaf5]/70 p-6 md:p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {pillars.map((p) => {
+            const Icon = p.icon;
+            return (
+              <div key={p.t} className="flex items-center gap-4">
+                {/* Shield/Globe Icon Badge */}
+                <div className="h-11 w-11 rounded-full bg-white border border-[#f5e3d1] flex items-center justify-center text-[#b45309] shadow-sm shrink-0">
+                  <Icon size={20} />
+                </div>
+                {/* Details */}
+                <div>
+                  <h4 className="font-display text-base font-bold text-ink leading-snug">
+                    {p.t}
+                  </h4>
+                  <p className="text-xs text-muted-foreground mt-0.5">
+                    {p.d}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+    </div>
   );
 }

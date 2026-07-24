@@ -7,7 +7,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 grid gap-10 md:grid-cols-4">
         <div>
           <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="Emperor" className="h-12 w-12" />
+            <img src="/logo-final.png" alt="Emperor" className="h-12 w-12" />
             <div>
               <div className="font-display text-xl font-bold text-white">EMPEROR</div>
               <div className="text-[10px] uppercase tracking-[0.2em] text-gold">

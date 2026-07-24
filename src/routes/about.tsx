@@ -23,7 +23,7 @@ export const Route = createFileRoute("/about")({
 
 function About() {
   return (
-    <>
+    <div className="animate-fade-in-up">
       <PageHero
         eyebrow="About Us"
         title="Rooted in India. Trusted worldwide."
@@ -101,7 +101,7 @@ function About() {
           ))}
         </div>
       </section>
-    </>
+    </div>
   );
 }
 

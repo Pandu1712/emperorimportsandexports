@@ -3,7 +3,7 @@ import { useState } from "react";
 import { products, type Product } from "@/data/products";
 import { ProductModal } from "@/components/ProductModal";
 import { PageHero } from "./about";
-import { ArrowRight } from "lucide-react";
+import { ProductCard } from "@/components/ProductCard";
 
 export const Route = createFileRoute("/products")({
   head: () => ({
@@ -27,7 +27,7 @@ export const Route = createFileRoute("/products")({
 function ProductsPage() {
   const [selected, setSelected] = useState<Product | null>(null);
   return (
-    <>
+    <div className="animate-fade-in-up">
       <PageHero
         eyebrow="Our Range"
         title="Products crafted for global markets"
@@ -36,34 +36,11 @@ function ProductsPage() {
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {products.map((p) => (
-            <button
-              key={p.id}
-              onClick={() => setSelected(p)}
-              className="group text-left bg-card rounded-2xl overflow-hidden border border-border hover:shadow-gold hover:-translate-y-1 transition-all"
-            >
-              <div className="aspect-[4/3] overflow-hidden bg-ink">
-                <img
-                  src={p.image}
-                  alt={p.name}
-                  className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
-                  width={1024}
-                  height={768}
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="font-display text-2xl font-semibold text-ink">{p.name}</h3>
-                <p className="mt-1 text-sm text-muted-foreground">{p.tagline}</p>
-                <div className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-gold-deep">
-                  View details{" "}
-                  <ArrowRight size={14} className="group-hover:translate-x-1 transition" />
-                </div>
-              </div>
-            </button>
+            <ProductCard key={p.id} product={p} onClick={() => setSelected(p)} />
           ))}
         </div>
       </section>
       <ProductModal product={selected} onClose={() => setSelected(null)} />
-    </>
+    </div>
   );
 }

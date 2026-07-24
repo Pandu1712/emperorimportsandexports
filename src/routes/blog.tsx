@@ -50,7 +50,7 @@ const posts = [
 
 function Blog() {
   return (
-    <>
+    <div className="animate-fade-in-up">
       <PageHero
         eyebrow="Insights"
         title="Perspectives from the export floor."
@@ -88,6 +88,6 @@ function Blog() {
           ))}
         </div>
       </section>
-    </>
+    </div>
   );
 }

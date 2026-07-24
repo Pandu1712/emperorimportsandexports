@@ -15,8 +15,10 @@ import {
   Leaf,
 } from "lucide-react";
 import heroImg from "@/assets/hero-export.jpg";
+import whyEmperorGlobe from "@/assets/why-emperor-globe.png";
 import { products, type Product } from "@/data/products";
 import { ProductModal } from "@/components/ProductModal";
+import { ProductCard } from "@/components/ProductCard";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -40,7 +42,7 @@ export const Route = createFileRoute("/")({
 function Home() {
   const [selected, setSelected] = useState<Product | null>(null);
   return (
-    <>
+    <div className="animate-fade-in-up">
       {/* Hero */}
       <section className="relative overflow-hidden bg-[#021008] text-white">
         {/* Background Image */}
@@ -53,7 +55,7 @@ function Home() {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#021008] via-[#021008]/90 to-transparent" />
 
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 pb-36 md:pt-32 md:pb-44">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-14 pb-36 md:pt-18 md:pb-44">
           <div className="max-w-4xl">
             {/* Subtitle */}
             <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-gold font-medium">
@@ -488,79 +490,121 @@ function Home() {
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {products.map((p) => (
-              <button
-                key={p.id}
-                onClick={() => setSelected(p)}
-                className="group text-left bg-card rounded-2xl overflow-hidden border border-border hover:shadow-gold hover:-translate-y-1 transition-all"
-              >
-                <div className="aspect-[4/3] overflow-hidden bg-ink">
-                  <img
-                    src={p.image}
-                    alt={p.name}
-                    className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                    width={1024}
-                    height={768}
-                  />
-                </div>
-                <div className="p-5">
-                  <h3 className="font-display text-xl font-semibold text-ink">{p.name}</h3>
-                  <p className="mt-1 text-sm text-muted-foreground">{p.tagline}</p>
-                  <div className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-gold-deep">
-                    View details{" "}
-                    <ArrowRight size={14} className="group-hover:translate-x-1 transition" />
-                  </div>
-                </div>
-              </button>
+              <ProductCard key={p.id} product={p} onClick={() => setSelected(p)} />
             ))}
           </div>
         </div>
       </section>
 
       {/* Why us */}
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24">
-        <div className="text-center max-w-2xl mx-auto">
-          <div className="text-xs uppercase tracking-[0.3em] text-gold-deep font-semibold">
-            Why Emperor
-          </div>
-          <h2 className="mt-2 font-display text-4xl md:text-5xl text-ink">
-            Built on trust. Delivered with precision.
-          </h2>
+      <section className="relative overflow-hidden bg-white py-24">
+        {/* Giant subtle globe background decoration on the left */}
+        <div className="absolute left-[-10%] top-[5%] w-[35%] aspect-square pointer-events-none select-none opacity-[0.07] z-0">
+          <img
+            src={whyEmperorGlobe}
+            alt="Globe decoration"
+            className="w-full h-full object-contain"
+          />
         </div>
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {[
-            {
-              icon: Award,
-              t: "Grade-A Quality",
-              d: "Every consignment passes multi-stage inspection before dispatch.",
-            },
-            {
-              icon: Truck,
-              t: "Door-to-Door",
-              d: "FOB, CIF, and DDP terms with reliable freight partners.",
-            },
-            {
-              icon: ShieldCheck,
-              t: "Compliance-First",
-              d: "GSTIN, IEC, FSSAI and APEDA registered exporter.",
-            },
-            {
-              icon: Globe,
-              t: "25+ Markets",
-              d: "Trusted by importers across Middle East, Asia, EU and Africa.",
-            },
-          ].map(({ icon: Icon, t, d }) => (
-            <div
-              key={t}
-              className="rounded-2xl border border-border bg-card p-7 hover:border-gold transition"
-            >
-              <div className="h-12 w-12 rounded-xl bg-gradient-gold flex items-center justify-center text-ink shadow-gold">
-                <Icon size={22} />
-              </div>
-              <h3 className="mt-5 font-display text-xl font-semibold text-ink">{t}</h3>
-              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{d}</p>
+
+        {/* Abstract topographic waves decoration on the right */}
+        <svg
+          className="absolute right-0 top-1/4 w-[22%] h-[60%] text-[#b45309]/[0.04] pointer-events-none select-none z-0"
+          viewBox="0 0 100 100"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="0.5"
+        >
+          <path d="M 0,20 C 30,10 70,30 100,20" />
+          <path d="M 0,40 C 30,30 70,50 100,40" />
+          <path d="M 0,60 C 30,50 70,70 100,60" />
+          <path d="M 0,80 C 30,70 70,90 100,80" />
+        </svg>
+
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto">
+            {/* Elegant Subtitle */}
+            <div className="flex items-center justify-center gap-3">
+              <div className="h-[1px] w-8 bg-[#b45309]/40" />
+              <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#b45309]">
+                Why Emperor
+              </span>
+              <div className="h-[1px] w-8 bg-[#b45309]/40" />
             </div>
-          ))}
+
+            {/* Main Title */}
+            <h2 className="mt-4 font-display text-4xl md:text-[2.75rem] lg:text-[3.25rem] font-bold text-ink leading-tight">
+              Built on trust. Delivered with <br />
+              <span className="text-[#b45309]">precision.</span>
+            </h2>
+
+            {/* Centered Divider with diamond */}
+            <div className="flex items-center justify-center gap-3 mt-4 mb-16">
+              <div className="h-[1px] w-28 bg-gradient-to-r from-transparent to-[#b45309]/30" />
+              <span className="text-[#b45309]/70 text-[10px]">✦</span>
+              <div className="h-[1px] w-28 bg-gradient-to-l from-transparent to-[#b45309]/30" />
+            </div>
+          </div>
+
+          {/* Cards Grid */}
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              {
+                icon: Award,
+                t: "Grade-A Quality",
+                d: "Every consignment passes multi-stage inspection before dispatch.",
+              },
+              {
+                icon: Truck,
+                t: "Door-to-Door",
+                d: "FOB, CIF, and DDP terms with reliable freight partners.",
+              },
+              {
+                icon: ShieldCheck,
+                t: "Compliance-First",
+                d: "GSTIN, IEC, FSSAI and APEDA registered exporter.",
+              },
+              {
+                icon: Globe,
+                t: "25+ Markets",
+                d: "Trusted by importers across Middle East, Asia, EU and Africa.",
+              },
+            ].map(({ icon: Icon, t, d }) => (
+              <div
+                key={t}
+                className="group relative bg-white rounded-[2.2rem] border border-[#f2e2d2] hover:border-[#b45309]/60 hover:-translate-y-1.5 hover:shadow-[0_20px_50px_rgba(180,83,9,0.03)] transition-all duration-500 p-8 flex flex-col justify-between min-h-[350px]"
+              >
+                <div>
+                  {/* Circle Icon Badge */}
+                  <div className="flex justify-start mb-6">
+                    <div className="h-14 w-14 rounded-full bg-[#fdf8f2] border border-[#f5e3d1] flex items-center justify-center text-[#b45309] shadow-sm z-10 transition-transform duration-300 group-hover:scale-105">
+                      <Icon size={22} />
+                    </div>
+                  </div>
+
+                  {/* Card Title */}
+                  <h3 className="font-display text-2xl font-bold tracking-tight text-ink">
+                    {t}
+                  </h3>
+
+                  {/* Horizontal gold bar line */}
+                  <div className="h-[2px] w-6 bg-[#b45309]/40 mt-3.5 mb-4" />
+
+                  {/* Description */}
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {d}
+                  </p>
+                </div>
+
+                {/* Bottom Row Action Button */}
+                <div className="mt-8 flex justify-end">
+                  <div className="h-8 w-8 rounded-full border border-[#f5e3d1] bg-[#fdf8f2]/40 flex items-center justify-center text-[#b45309]/80 shadow-sm transition-all duration-300 group-hover:bg-[#b45309] group-hover:text-white">
+                    <ArrowRight size={13} />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -585,6 +629,6 @@ function Home() {
       </section>
 
       <ProductModal product={selected} onClose={() => setSelected(null)} />
-    </>
+    </div>
   );
 }

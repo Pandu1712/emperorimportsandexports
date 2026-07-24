@@ -25,7 +25,7 @@ export const Route = createFileRoute("/contact")({
 function Contact() {
   const [submitted, setSubmitted] = useState(false);
   return (
-    <>
+    <div className="animate-fade-in-up">
       <PageHero
         eyebrow="Get in Touch"
         title="Let's start a shipment."
@@ -65,8 +65,8 @@ function Contact() {
             icon={Mail}
             title="Email"
             body={
-              <a href="mailto:info@emperorexports.in" className="hover:text-gold-deep">
-                info@emperorexports.in
+              <a href="mailto:info@emperorexports.com" className="hover:text-gold-deep">
+                info@emperorexports.com
               </a>
             }
           />
@@ -84,28 +84,26 @@ function Contact() {
             e.preventDefault();
             setSubmitted(true);
           }}
-          className="lg:col-span-3 rounded-2xl border border-border bg-card p-8 shadow-soft"
+          className="lg:col-span-3 rounded-2xl border border-border bg-card p-8 md:p-10"
         >
           {submitted ? (
-            <div className="text-center py-14">
-              <div className="mx-auto h-14 w-14 rounded-full bg-gradient-gold flex items-center justify-center text-ink font-bold text-xl shadow-gold">
-                ✓
-              </div>
-              <h3 className="mt-4 font-display text-2xl text-ink">Thank you!</h3>
+            <div className="text-center py-10">
+              <div className="text-4xl">✉️</div>
+              <h3 className="mt-4 font-display text-2xl text-ink">Thank You!</h3>
               <p className="mt-2 text-muted-foreground text-sm">
-                Your enquiry has been received. We'll be in touch within 24 hours.
+                We have received your enquiry. G. Ganesh or our team will email you within 24
+                hours.
               </p>
             </div>
           ) : (
             <>
-              <h3 className="font-display text-2xl text-ink">Send an enquiry</h3>
-              <div className="mt-6 grid gap-4 sm:grid-cols-2">
-                <Field label="Full name" name="name" required />
-                <Field label="Company" name="company" />
-                <Field label="Email" name="email" type="email" required />
-                <Field label="Phone" name="phone" />
-                <Field label="Country" name="country" />
-                <Field label="Product of interest" name="product" />
+              <div className="grid gap-4 sm:grid-cols-2">
+                <Field label="Full Name" name="name" required />
+                <Field label="Company Name" name="company" required />
+              </div>
+              <div className="grid gap-4 sm:grid-cols-2 mt-4">
+                <Field label="Email Address" name="email" type="email" required />
+                <Field label="Phone Number" name="phone" type="tel" required />
               </div>
               <Field label="Message" name="message" textarea required />
               <button
@@ -118,7 +116,7 @@ function Contact() {
           )}
         </form>
       </section>
-    </>
+    </div>
   );
 }
 

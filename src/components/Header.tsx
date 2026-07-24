@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import {
-  Menu,
+  LayoutGrid,
   X,
   MapPin,
   Mail,
@@ -77,7 +77,7 @@ export function Header() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
           <Link to="/" className="flex items-center gap-3">
             <img
-              src="/logo.png"
+              src="/logo-final.png"
               alt="Emperor Exports & Imports"
               className="h-12 w-12 object-contain"
             />
@@ -113,7 +113,7 @@ export function Header() {
             className="lg:hidden p-2 text-ink"
             aria-label="Menu"
           >
-            {open ? <X size={24} /> : <Menu size={24} />}
+            {open ? <X size={24} /> : <LayoutGrid size={24} />}
           </button>
         </div>
         {open && (

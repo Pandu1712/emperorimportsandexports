@@ -47,7 +47,7 @@ const certs = [
 
 function Certifications() {
   return (
-    <>
+    <div className="animate-fade-in-up">
       <PageHero
         eyebrow="Trust & Compliance"
         title="Every credential, every consignment."
@@ -69,6 +69,6 @@ function Certifications() {
           ))}
         </div>
       </section>
-    </>
+    </div>
   );
 }
