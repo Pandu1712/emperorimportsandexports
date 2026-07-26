@@ -16,6 +16,7 @@ import { Route as CertificationsRouteImport } from './routes/certifications'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as ExportProcessRouteImport } from './routes/export-process'
 import { Route as MarketsRouteImport } from './routes/markets'
+import { Route as ProductsRouteImport } from './routes/products'
 import { Route as ProductsIndexRouteImport } from './routes/products/index'
 import { Route as ProductsIdRouteImport } from './routes/products/$id'
 
@@ -54,6 +55,11 @@ const MarketsRoute = MarketsRouteImport.update({
   path: '/markets',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProductsRoute = ProductsRouteImport.update({
+  id: '/products',
+  path: '/products',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ProductsIndexRoute = ProductsIndexRouteImport.update({
   id: '/',
   path: '/',
@@ -73,6 +79,7 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/export-process': typeof ExportProcessRoute
   '/markets': typeof MarketsRoute
+  '/products': typeof ProductsRouteWithChildren
   '/products/$id': typeof ProductsIdRoute
   '/products/': typeof ProductsIndexRoute
 }
@@ -96,6 +103,7 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/export-process': typeof ExportProcessRoute
   '/markets': typeof MarketsRoute
+  '/products': typeof ProductsRouteWithChildren
   '/products/$id': typeof ProductsIdRoute
   '/products/': typeof ProductsIndexRoute
 }
@@ -109,6 +117,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/export-process'
     | '/markets'
+    | '/products'
     | '/products/$id'
     | '/products/'
   fileRoutesByTo: FileRoutesByTo
@@ -131,6 +140,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/export-process'
     | '/markets'
+    | '/products'
     | '/products/$id'
     | '/products/'
   fileRoutesById: FileRoutesById
@@ -143,6 +153,7 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   ExportProcessRoute: typeof ExportProcessRoute
   MarketsRoute: typeof MarketsRoute
+  ProductsRoute: typeof ProductsRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
@@ -196,6 +207,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MarketsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/products': {
+      id: '/products'
+      path: '/products'
+      fullPath: '/products'
+      preLoaderRoute: typeof ProductsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/products/': {
       id: '/products/'
       path: '/'
@@ -213,6 +231,20 @@ declare module '@tanstack/react-router' {
   }
 }
 
+interface ProductsRouteChildren {
+  ProductsIdRoute: typeof ProductsIdRoute
+  ProductsIndexRoute: typeof ProductsIndexRoute
+}
+
+const ProductsRouteChildren: ProductsRouteChildren = {
+  ProductsIdRoute: ProductsIdRoute,
+  ProductsIndexRoute: ProductsIndexRoute,
+}
+
+const ProductsRouteWithChildren = ProductsRoute._addFileChildren(
+  ProductsRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
@@ -221,6 +253,7 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   ExportProcessRoute: ExportProcessRoute,
   MarketsRoute: MarketsRoute,
+  ProductsRoute: ProductsRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

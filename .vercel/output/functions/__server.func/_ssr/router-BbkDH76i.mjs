@@ -1,11 +1,11 @@
 import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react, t as QueryClientProvider } from "../_libs/react+tanstack__react-query.mjs";
 import { c as HeadContent, d as Outlet, f as lazyRouteComponent, g as useRouter, h as Link, m as createRootRouteWithContext, p as createFileRoute, s as Scripts, u as createRouter } from "../_libs/@tanstack/react-router+[...].mjs";
-import { t as Route$8 } from "../_id-BMmw19El.mjs";
+import { t as Route$9 } from "../_id-BMmw19El.mjs";
 import { A as Facebook, B as ArrowUp, C as Instagram, D as Globe, S as LayoutGrid, _ as MapPin, k as FileText, p as Phone, t as X, v as Mail, y as Linkedin } from "../_libs/lucide-react.mjs";
-import { n as Route$9 } from "./about--iXDearc.mjs";
+import { n as Route$10 } from "./about--iXDearc.mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-D86KUaRd.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-BbkDH76i.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var styles_default = "/assets/styles-D7PPwM5w.css";
@@ -383,7 +383,7 @@ function ErrorComponent({ error, reset }) {
 		})
 	});
 }
-var Route$7 = createRootRouteWithContext()({
+var Route$8 = createRootRouteWithContext()({
 	head: () => ({
 		meta: [
 			{ charSet: "utf-8" },
@@ -454,7 +454,7 @@ function RootShell({ children }) {
 	});
 }
 function RootComponent() {
-	const { queryClient } = Route$7.useRouteContext();
+	const { queryClient } = Route$8.useRouteContext();
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(QueryClientProvider, {
 		client: queryClient,
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -471,8 +471,8 @@ function RootComponent() {
 		})
 	});
 }
-var $$splitComponentImporter$6 = () => import("./routes-B_7uuF95.mjs");
-var Route$6 = createFileRoute("/")({
+var $$splitComponentImporter$7 = () => import("./routes-B_7uuF95.mjs");
+var Route$7 = createFileRoute("/")({
 	head: () => ({ meta: [
 		{ title: "Emperor Exports & Imports — Premium Indian Agri Exporter" },
 		{
@@ -488,10 +488,10 @@ var Route$6 = createFileRoute("/")({
 			content: "Premium Indian agricultural exports for global buyers."
 		}
 	] }),
-	component: lazyRouteComponent($$splitComponentImporter$6, "component")
+	component: lazyRouteComponent($$splitComponentImporter$7, "component")
 });
-var $$splitComponentImporter$5 = () => import("./blog-Dbm_DtVM.mjs");
-var Route$5 = createFileRoute("/blog")({
+var $$splitComponentImporter$6 = () => import("./blog-Dbm_DtVM.mjs");
+var Route$6 = createFileRoute("/blog")({
 	head: () => ({ meta: [
 		{ title: "Blog & Insights — Emperor Exports & Imports" },
 		{
@@ -507,10 +507,10 @@ var Route$5 = createFileRoute("/blog")({
 			content: "Perspectives on Indian agricultural trade."
 		}
 	] }),
-	component: lazyRouteComponent($$splitComponentImporter$5, "component")
+	component: lazyRouteComponent($$splitComponentImporter$6, "component")
 });
-var $$splitComponentImporter$4 = () => import("./certifications-VftdvyJR.mjs");
-var Route$4 = createFileRoute("/certifications")({
+var $$splitComponentImporter$5 = () => import("./certifications-VftdvyJR.mjs");
+var Route$5 = createFileRoute("/certifications")({
 	head: () => ({ meta: [
 		{ title: "Certifications — Emperor Exports & Imports" },
 		{
@@ -526,10 +526,10 @@ var Route$4 = createFileRoute("/certifications")({
 			content: "Recognised exporter with all statutory Indian export credentials."
 		}
 	] }),
-	component: lazyRouteComponent($$splitComponentImporter$4, "component")
+	component: lazyRouteComponent($$splitComponentImporter$5, "component")
 });
-var $$splitComponentImporter$3 = () => import("./contact-BbeKFOCe.mjs");
-var Route$3 = createFileRoute("/contact")({
+var $$splitComponentImporter$4 = () => import("./contact-BbeKFOCe.mjs");
+var Route$4 = createFileRoute("/contact")({
 	head: () => ({ meta: [
 		{ title: "Contact — Emperor Exports & Imports" },
 		{
@@ -545,10 +545,10 @@ var Route$3 = createFileRoute("/contact")({
 			content: "Send us your requirement — we respond within 24 hours."
 		}
 	] }),
-	component: lazyRouteComponent($$splitComponentImporter$3, "component")
+	component: lazyRouteComponent($$splitComponentImporter$4, "component")
 });
-var $$splitComponentImporter$2 = () => import("./export-process-CFlmCuah.mjs");
-var Route$2 = createFileRoute("/export-process")({
+var $$splitComponentImporter$3 = () => import("./export-process-CFlmCuah.mjs");
+var Route$3 = createFileRoute("/export-process")({
 	head: () => ({ meta: [
 		{ title: "Export Process — Emperor Exports & Imports" },
 		{
@@ -564,10 +564,10 @@ var Route$2 = createFileRoute("/export-process")({
 			content: "Farm to port to your warehouse — how we ship."
 		}
 	] }),
-	component: lazyRouteComponent($$splitComponentImporter$2, "component")
+	component: lazyRouteComponent($$splitComponentImporter$3, "component")
 });
-var $$splitComponentImporter$1 = () => import("./markets-BxeW3JMn.mjs");
-var Route$1 = createFileRoute("/markets")({
+var $$splitComponentImporter$2 = () => import("./markets-BxeW3JMn.mjs");
+var Route$2 = createFileRoute("/markets")({
 	head: () => ({ meta: [
 		{ title: "Markets We Serve — Emperor Exports & Imports" },
 		{
@@ -583,8 +583,10 @@ var Route$1 = createFileRoute("/markets")({
 			content: "Global reach across 25+ countries."
 		}
 	] }),
-	component: lazyRouteComponent($$splitComponentImporter$1, "component")
+	component: lazyRouteComponent($$splitComponentImporter$2, "component")
 });
+var $$splitComponentImporter$1 = () => import("./products-C7F03LXy.mjs");
+var Route$1 = createFileRoute("/products")({ component: lazyRouteComponent($$splitComponentImporter$1, "component") });
 var $$splitComponentImporter = () => import("./products-BYOr9LiA.mjs");
 var Route = createFileRoute("/products/")({
 	head: () => ({ meta: [
@@ -604,51 +606,59 @@ var Route = createFileRoute("/products/")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter, "component")
 });
-var IndexRoute = Route$6.update({
+var IndexRoute = Route$7.update({
 	id: "/",
 	path: "/",
-	getParentRoute: () => Route$7
+	getParentRoute: () => Route$8
 });
-var AboutRoute = Route$9.update({
+var AboutRoute = Route$10.update({
 	id: "/about",
 	path: "/about",
-	getParentRoute: () => Route$7
+	getParentRoute: () => Route$8
 });
-var BlogRoute = Route$5.update({
+var BlogRoute = Route$6.update({
 	id: "/blog",
 	path: "/blog",
-	getParentRoute: () => Route$7
+	getParentRoute: () => Route$8
 });
-var CertificationsRoute = Route$4.update({
+var CertificationsRoute = Route$5.update({
 	id: "/certifications",
 	path: "/certifications",
-	getParentRoute: () => Route$7
+	getParentRoute: () => Route$8
 });
-var ContactRoute = Route$3.update({
+var ContactRoute = Route$4.update({
 	id: "/contact",
 	path: "/contact",
-	getParentRoute: () => Route$7
+	getParentRoute: () => Route$8
 });
-var ExportProcessRoute = Route$2.update({
+var ExportProcessRoute = Route$3.update({
 	id: "/export-process",
 	path: "/export-process",
-	getParentRoute: () => Route$7
+	getParentRoute: () => Route$8
 });
-var MarketsRoute = Route$1.update({
+var MarketsRoute = Route$2.update({
 	id: "/markets",
 	path: "/markets",
-	getParentRoute: () => Route$7
+	getParentRoute: () => Route$8
 });
-Route.update({
+var ProductsRoute = Route$1.update({
+	id: "/products",
+	path: "/products",
+	getParentRoute: () => Route$8
+});
+var ProductsIndexRoute = Route.update({
 	id: "/",
 	path: "/",
 	getParentRoute: () => ProductsRoute
 });
-Route$8.update({
-	id: "/$id",
-	path: "/$id",
-	getParentRoute: () => ProductsRoute
-});
+var ProductsRouteChildren = {
+	ProductsIdRoute: Route$9.update({
+		id: "/$id",
+		path: "/$id",
+		getParentRoute: () => ProductsRoute
+	}),
+	ProductsIndexRoute
+};
 var rootRouteChildren = {
 	IndexRoute,
 	AboutRoute,
@@ -656,9 +666,10 @@ var rootRouteChildren = {
 	CertificationsRoute,
 	ContactRoute,
 	ExportProcessRoute,
-	MarketsRoute
+	MarketsRoute,
+	ProductsRoute: ProductsRoute._addFileChildren(ProductsRouteChildren)
 };
-var routeTree = Route$7._addFileChildren(rootRouteChildren)._addFileTypes();
+var routeTree = Route$8._addFileChildren(rootRouteChildren)._addFileTypes();
 var getRouter = () => {
 	return createRouter({
 		routeTree,
