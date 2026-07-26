@@ -1,9 +1,9 @@
+import { Link } from "@tanstack/react-router";
 import { type Product } from "@/data/products";
 import { ArrowRight, Leaf, Palmtree, Wheat, Sprout, Flame } from "lucide-react";
 
 interface ProductCardProps {
   product: Product;
-  onClick: () => void;
 }
 
 // Icon resolver based on product ID
@@ -26,12 +26,13 @@ function getProductIcon(id: string) {
   }
 }
 
-export function ProductCard({ product, onClick }: ProductCardProps) {
+export function ProductCard({ product }: ProductCardProps) {
   const Icon = getProductIcon(product.id);
 
   return (
-    <button
-      onClick={onClick}
+    <Link
+      to="/products/$id"
+      params={{ id: product.id }}
       className="group text-left bg-white rounded-[2.5rem] overflow-hidden border border-black/[0.04] shadow-[0_15px_45px_rgba(0,0,0,0.02)] md:hover:shadow-[0_30px_70px_rgba(0,0,0,0.06)] md:hover:-translate-y-2 transition-all duration-500 flex flex-col justify-between min-h-[440px]"
     >
       {/* Top Half: Curved Image with Floating Icon */}
@@ -92,6 +93,6 @@ export function ProductCard({ product, onClick }: ProductCardProps) {
           </div>
         </div>
       </div>
-    </button>
+    </Link>
   );
 }

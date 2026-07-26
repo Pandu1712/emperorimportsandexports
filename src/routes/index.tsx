@@ -16,8 +16,7 @@ import {
 } from "lucide-react";
 import heroImg from "@/assets/hero-export.jpg";
 import whyEmperorGlobe from "@/assets/why-emperor-globe.png";
-import { products, type Product } from "@/data/products";
-import { ProductModal } from "@/components/ProductModal";
+import { products } from "@/data/products";
 import { ProductCard } from "@/components/ProductCard";
 
 export const Route = createFileRoute("/")({
@@ -40,7 +39,6 @@ export const Route = createFileRoute("/")({
 });
 
 function Home() {
-  const [selected, setSelected] = useState<Product | null>(null);
   return (
     <div className="animate-fade-in-up">
       {/* Hero */}
@@ -490,7 +488,7 @@ function Home() {
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {products.map((p) => (
-              <ProductCard key={p.id} product={p} onClick={() => setSelected(p)} />
+              <ProductCard key={p.id} product={p} />
             ))}
           </div>
         </div>
@@ -627,8 +625,6 @@ function Home() {
           </div>
         </div>
       </section>
-
-      <ProductModal product={selected} onClose={() => setSelected(null)} />
     </div>
   );
 }

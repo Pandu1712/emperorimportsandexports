@@ -1,5 +1,5 @@
 import { r as __toESM } from "../_runtime.mjs";
-import { n as require_react } from "./react+tanstack__react-query.mjs";
+import { r as require_react } from "./react+tanstack__react-query.mjs";
 //#region node_modules/lucide-react/dist/esm/shared/src/utils/mergeClasses.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 /**
@@ -109,6 +109,19 @@ var createLucideIcon = (iconName, iconNode) => {
 	Component.displayName = toPascalCase(iconName);
 	return Component;
 };
+/**
+* @license lucide-react v0.575.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var ArrowLeft = createLucideIcon("arrow-left", [["path", {
+	d: "m12 19-7-7 7-7",
+	key: "1l729n"
+}], ["path", {
+	d: "M19 12H5",
+	key: "x3x0zl"
+}]]);
 /**
 * @license lucide-react v0.575.0 - ISC
 *
@@ -959,4 +972,4 @@ var X = createLucideIcon("x", [["path", {
 	key: "d8bk6v"
 }]]);
 //#endregion
-export { Facebook as A, ArrowUp as B, Instagram as C, Globe as D, Handshake as E, Castle as F, Calendar as I, Building as L, Compass as M, Clock as N, Flame as O, CircleCheck as P, Building2 as R, LayoutGrid as S, Headphones as T, ArrowRight as V, MapPin as _, Trees as a, Lightbulb as b, Sprout as c, ShieldCheck as d, Play as f, MessageCircle as g, Mountain as h, Truck as i, Eye as j, FileText as k, Ship as l, Package as m, Wheat as n, TreePalm as o, Phone as p, Users as r, Target as s, X as t, Shield as u, Mail as v, Heart as w, Leaf as x, Linkedin as y, Award as z };
+export { Facebook as A, ArrowUp as B, Instagram as C, Globe as D, Handshake as E, Castle as F, ArrowLeft as H, Calendar as I, Building as L, Compass as M, Clock as N, Flame as O, CircleCheck as P, Building2 as R, LayoutGrid as S, Headphones as T, ArrowRight as V, MapPin as _, Trees as a, Lightbulb as b, Sprout as c, ShieldCheck as d, Play as f, MessageCircle as g, Mountain as h, Truck as i, Eye as j, FileText as k, Ship as l, Package as m, Wheat as n, TreePalm as o, Phone as p, Users as r, Target as s, X as t, Shield as u, Mail as v, Heart as w, Leaf as x, Linkedin as y, Award as z };

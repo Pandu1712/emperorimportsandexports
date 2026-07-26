@@ -1,15 +1,13 @@
-import { r as __toESM } from "../_runtime.mjs";
-import { n as require_react, r as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
+import { t as products } from "./products-BmNw7Nds.mjs";
+import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
+import { h as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { D as Globe, N as Clock, V as ArrowRight, d as ShieldCheck, f as Play, i as Truck, l as Ship, m as Package, r as Users, x as Leaf, z as Award } from "../_libs/lucide-react.mjs";
 import { t as hero_export_default } from "./hero-export-Dq4a_cfn.mjs";
 import { t as why_emperor_globe_default } from "./why-emperor-globe-Ccn7F-Fn.mjs";
-import { h as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { n as ProductModal, r as products, t as ProductCard } from "./ProductCard-4RWISzu0.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-DeCtsEAp.js
-var import_react = /* @__PURE__ */ __toESM(require_react());
+import { t as ProductCard } from "./ProductCard-DZ-2lj-d.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-B_7uuF95.js
 var import_jsx_runtime = require_jsx_runtime();
 function Home() {
-	const [selected, setSelected] = (0, import_react.useState)(null);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 		className: "animate-fade-in-up",
 		children: [
@@ -501,10 +499,7 @@ function Home() {
 						})]
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 						className: "grid gap-6 sm:grid-cols-2 lg:grid-cols-3",
-						children: products.map((p) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ProductCard, {
-							product: p,
-							onClick: () => setSelected(p)
-						}, p.id))
+						children: products.map((p) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ProductCard, { product: p }, p.id))
 					})]
 				})
 			}),
@@ -648,10 +643,6 @@ function Home() {
 						]
 					})]
 				})
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ProductModal, {
-				product: selected,
-				onClose: () => setSelected(null)
 			})
 		]
 	});

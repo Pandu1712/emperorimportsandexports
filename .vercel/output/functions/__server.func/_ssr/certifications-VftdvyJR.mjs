@@ -1,4 +1,4 @@
-import { r as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
+import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
 import { z as Award } from "../_libs/lucide-react.mjs";
 import { t as PageHero } from "./about--iXDearc.mjs";
 //#region node_modules/.nitro/vite/services/ssr/assets/certifications-VftdvyJR.js

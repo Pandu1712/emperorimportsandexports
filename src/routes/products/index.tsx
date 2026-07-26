@@ -1,11 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
-import { products, type Product } from "@/data/products";
-import { ProductModal } from "@/components/ProductModal";
-import { PageHero } from "./about";
+import { products } from "@/data/products";
+import { PageHero } from "../about";
 import { ProductCard } from "@/components/ProductCard";
 
-export const Route = createFileRoute("/products")({
+export const Route = createFileRoute("/products/")({
   head: () => ({
     meta: [
       { title: "Products — Emperor Exports & Imports" },
@@ -25,7 +23,6 @@ export const Route = createFileRoute("/products")({
 });
 
 function ProductsPage() {
-  const [selected, setSelected] = useState<Product | null>(null);
   return (
     <div className="animate-fade-in-up">
       <PageHero
@@ -36,11 +33,10 @@ function ProductsPage() {
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {products.map((p) => (
-            <ProductCard key={p.id} product={p} onClick={() => setSelected(p)} />
+            <ProductCard key={p.id} product={p} />
           ))}
         </div>
       </section>
-      <ProductModal product={selected} onClose={() => setSelected(null)} />
     </div>
   );
 }

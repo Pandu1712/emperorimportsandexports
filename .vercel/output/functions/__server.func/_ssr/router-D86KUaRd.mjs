@@ -1,13 +1,14 @@
 import { r as __toESM } from "../_runtime.mjs";
-import { n as require_react, r as require_jsx_runtime, t as QueryClientProvider } from "../_libs/react+tanstack__react-query.mjs";
+import { n as require_jsx_runtime, r as require_react, t as QueryClientProvider } from "../_libs/react+tanstack__react-query.mjs";
+import { c as HeadContent, d as Outlet, f as lazyRouteComponent, g as useRouter, h as Link, m as createRootRouteWithContext, p as createFileRoute, s as Scripts, u as createRouter } from "../_libs/@tanstack/react-router+[...].mjs";
+import { t as Route$8 } from "../_id-BMmw19El.mjs";
 import { A as Facebook, B as ArrowUp, C as Instagram, D as Globe, S as LayoutGrid, _ as MapPin, k as FileText, p as Phone, t as X, v as Mail, y as Linkedin } from "../_libs/lucide-react.mjs";
-import { _ as useRouter, c as HeadContent, d as Outlet, f as lazyRouteComponent, h as Link, m as createRootRouteWithContext, p as createFileRoute, s as Scripts, u as createRouter } from "../_libs/@tanstack/react-router+[...].mjs";
-import { n as Route$8 } from "./about--iXDearc.mjs";
+import { n as Route$9 } from "./about--iXDearc.mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-CViyHLMR.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-D86KUaRd.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
-var styles_default = "/assets/styles-D_DQTao_.css";
+var styles_default = "/assets/styles-D7PPwM5w.css";
 var nav = [
 	{
 		to: "/",
@@ -470,7 +471,7 @@ function RootComponent() {
 		})
 	});
 }
-var $$splitComponentImporter$6 = () => import("./routes-DeCtsEAp.mjs");
+var $$splitComponentImporter$6 = () => import("./routes-B_7uuF95.mjs");
 var Route$6 = createFileRoute("/")({
 	head: () => ({ meta: [
 		{ title: "Emperor Exports & Imports — Premium Indian Agri Exporter" },
@@ -584,8 +585,8 @@ var Route$1 = createFileRoute("/markets")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-var $$splitComponentImporter = () => import("./products-D0bEUh7b.mjs");
-var Route = createFileRoute("/products")({
+var $$splitComponentImporter = () => import("./products-BYOr9LiA.mjs");
+var Route = createFileRoute("/products/")({
 	head: () => ({ meta: [
 		{ title: "Products — Emperor Exports & Imports" },
 		{
@@ -603,47 +604,59 @@ var Route = createFileRoute("/products")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter, "component")
 });
+var IndexRoute = Route$6.update({
+	id: "/",
+	path: "/",
+	getParentRoute: () => Route$7
+});
+var AboutRoute = Route$9.update({
+	id: "/about",
+	path: "/about",
+	getParentRoute: () => Route$7
+});
+var BlogRoute = Route$5.update({
+	id: "/blog",
+	path: "/blog",
+	getParentRoute: () => Route$7
+});
+var CertificationsRoute = Route$4.update({
+	id: "/certifications",
+	path: "/certifications",
+	getParentRoute: () => Route$7
+});
+var ContactRoute = Route$3.update({
+	id: "/contact",
+	path: "/contact",
+	getParentRoute: () => Route$7
+});
+var ExportProcessRoute = Route$2.update({
+	id: "/export-process",
+	path: "/export-process",
+	getParentRoute: () => Route$7
+});
+var MarketsRoute = Route$1.update({
+	id: "/markets",
+	path: "/markets",
+	getParentRoute: () => Route$7
+});
+Route.update({
+	id: "/",
+	path: "/",
+	getParentRoute: () => ProductsRoute
+});
+Route$8.update({
+	id: "/$id",
+	path: "/$id",
+	getParentRoute: () => ProductsRoute
+});
 var rootRouteChildren = {
-	IndexRoute: Route$6.update({
-		id: "/",
-		path: "/",
-		getParentRoute: () => Route$7
-	}),
-	AboutRoute: Route$8.update({
-		id: "/about",
-		path: "/about",
-		getParentRoute: () => Route$7
-	}),
-	BlogRoute: Route$5.update({
-		id: "/blog",
-		path: "/blog",
-		getParentRoute: () => Route$7
-	}),
-	CertificationsRoute: Route$4.update({
-		id: "/certifications",
-		path: "/certifications",
-		getParentRoute: () => Route$7
-	}),
-	ContactRoute: Route$3.update({
-		id: "/contact",
-		path: "/contact",
-		getParentRoute: () => Route$7
-	}),
-	ExportProcessRoute: Route$2.update({
-		id: "/export-process",
-		path: "/export-process",
-		getParentRoute: () => Route$7
-	}),
-	MarketsRoute: Route$1.update({
-		id: "/markets",
-		path: "/markets",
-		getParentRoute: () => Route$7
-	}),
-	ProductsRoute: Route.update({
-		id: "/products",
-		path: "/products",
-		getParentRoute: () => Route$7
-	})
+	IndexRoute,
+	AboutRoute,
+	BlogRoute,
+	CertificationsRoute,
+	ContactRoute,
+	ExportProcessRoute,
+	MarketsRoute
 };
 var routeTree = Route$7._addFileChildren(rootRouteChildren)._addFileTypes();
 var getRouter = () => {

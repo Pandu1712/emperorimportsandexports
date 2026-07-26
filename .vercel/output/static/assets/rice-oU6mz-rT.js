@@ -1,0 +1,1 @@
+var e=`/assets/turmeric-DUP-aOe6.jpg`,t=`/assets/rice-Dlnczw7e.jpg`;export{e as n,t};

@@ -1,5 +1,5 @@
 import { r as __toESM } from "../_runtime.mjs";
-import { n as require_react, r as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
+import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { D as Globe, E as Handshake, N as Clock, T as Headphones, V as ArrowRight, c as Sprout, k as FileText, l as Ship, m as Package, u as Shield, z as Award } from "../_libs/lucide-react.mjs";
 import { t as hero_export_default } from "./hero-export-Dq4a_cfn.mjs";
 //#region node_modules/.nitro/vite/services/ssr/assets/export-process-CFlmCuah.js

@@ -16,7 +16,8 @@ import { Route as CertificationsRouteImport } from './routes/certifications'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as ExportProcessRouteImport } from './routes/export-process'
 import { Route as MarketsRouteImport } from './routes/markets'
-import { Route as ProductsRouteImport } from './routes/products'
+import { Route as ProductsIndexRouteImport } from './routes/products/index'
+import { Route as ProductsIdRouteImport } from './routes/products/$id'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -53,10 +54,15 @@ const MarketsRoute = MarketsRouteImport.update({
   path: '/markets',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ProductsRoute = ProductsRouteImport.update({
-  id: '/products',
-  path: '/products',
-  getParentRoute: () => rootRouteImport,
+const ProductsIndexRoute = ProductsIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => ProductsRoute,
+} as any)
+const ProductsIdRoute = ProductsIdRouteImport.update({
+  id: '/$id',
+  path: '/$id',
+  getParentRoute: () => ProductsRoute,
 } as any)
 
 export interface FileRoutesByFullPath {
@@ -67,7 +73,8 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/export-process': typeof ExportProcessRoute
   '/markets': typeof MarketsRoute
-  '/products': typeof ProductsRoute
+  '/products/$id': typeof ProductsIdRoute
+  '/products/': typeof ProductsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -77,7 +84,8 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/export-process': typeof ExportProcessRoute
   '/markets': typeof MarketsRoute
-  '/products': typeof ProductsRoute
+  '/products/$id': typeof ProductsIdRoute
+  '/products': typeof ProductsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -88,7 +96,8 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/export-process': typeof ExportProcessRoute
   '/markets': typeof MarketsRoute
-  '/products': typeof ProductsRoute
+  '/products/$id': typeof ProductsIdRoute
+  '/products/': typeof ProductsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -100,7 +109,8 @@ export interface FileRouteTypes {
     | '/contact'
     | '/export-process'
     | '/markets'
-    | '/products'
+    | '/products/$id'
+    | '/products/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -110,6 +120,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/export-process'
     | '/markets'
+    | '/products/$id'
     | '/products'
   id:
     | '__root__'
@@ -120,7 +131,8 @@ export interface FileRouteTypes {
     | '/contact'
     | '/export-process'
     | '/markets'
-    | '/products'
+    | '/products/$id'
+    | '/products/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -131,7 +143,6 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   ExportProcessRoute: typeof ExportProcessRoute
   MarketsRoute: typeof MarketsRoute
-  ProductsRoute: typeof ProductsRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -185,12 +196,19 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MarketsRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/products': {
-      id: '/products'
-      path: '/products'
-      fullPath: '/products'
-      preLoaderRoute: typeof ProductsRouteImport
-      parentRoute: typeof rootRouteImport
+    '/products/': {
+      id: '/products/'
+      path: '/'
+      fullPath: '/products/'
+      preLoaderRoute: typeof ProductsIndexRouteImport
+      parentRoute: typeof ProductsRoute
+    }
+    '/products/$id': {
+      id: '/products/$id'
+      path: '/$id'
+      fullPath: '/products/$id'
+      preLoaderRoute: typeof ProductsIdRouteImport
+      parentRoute: typeof ProductsRoute
     }
   }
 }
@@ -203,7 +221,6 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   ExportProcessRoute: ExportProcessRoute,
   MarketsRoute: MarketsRoute,
-  ProductsRoute: ProductsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
