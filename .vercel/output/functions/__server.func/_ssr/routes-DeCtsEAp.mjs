@@ -4,8 +4,8 @@ import { D as Globe, N as Clock, V as ArrowRight, d as ShieldCheck, f as Play, i
 import { t as hero_export_default } from "./hero-export-Dq4a_cfn.mjs";
 import { t as why_emperor_globe_default } from "./why-emperor-globe-Ccn7F-Fn.mjs";
 import { h as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { n as ProductModal, r as products, t as ProductCard } from "./ProductCard-DEw2XUTy.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-D1HlHpsQ.js
+import { n as ProductModal, r as products, t as ProductCard } from "./ProductCard-4RWISzu0.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-DeCtsEAp.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function Home() {

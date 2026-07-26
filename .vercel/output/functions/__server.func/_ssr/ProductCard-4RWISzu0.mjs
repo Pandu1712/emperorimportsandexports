@@ -3,7 +3,7 @@ import { n as require_react, r as require_jsx_runtime } from "../_libs/react+tan
 import { O as Flame, V as ArrowRight, c as Sprout, n as Wheat, o as TreePalm, t as X, x as Leaf } from "../_libs/lucide-react.mjs";
 import { n as turmeric_default, t as rice_default } from "./rice-B7b4Dz-c.mjs";
 import { g as require_react_dom } from "../_libs/@tanstack/react-router+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/ProductCard-DEw2XUTy.js
+//#region node_modules/.nitro/vite/services/ssr/assets/ProductCard-4RWISzu0.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var import_react_dom = require_react_dom();
@@ -190,92 +190,95 @@ function ProductModal({ product, onClose }) {
 		className: "fixed inset-0 z-[60] flex items-center justify-center bg-ink/70 backdrop-blur-sm p-4 animate-in fade-in",
 		onClick: onClose,
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			className: "relative bg-background rounded-2xl shadow-gold max-w-4xl w-full max-h-[85vh] overflow-y-auto overscroll-contain",
+			className: "relative bg-background rounded-2xl shadow-gold max-w-4xl w-full max-h-[85vh] flex flex-col overflow-hidden",
 			onClick: (e) => e.stopPropagation(),
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 				onClick: onClose,
-				className: "absolute top-4 right-4 z-10 h-10 w-10 rounded-full bg-background/80 backdrop-blur flex items-center justify-center hover:bg-secondary",
+				className: "absolute top-4 right-4 z-20 h-10 w-10 rounded-full bg-background/90 shadow-md backdrop-blur flex items-center justify-center hover:bg-secondary transition-colors",
 				"aria-label": "Close",
 				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(X, { size: 20 })
-			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				className: "grid md:grid-cols-2",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "bg-ink aspect-square md:aspect-auto",
-					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-						src: product.image,
-						alt: product.name,
-						className: "w-full h-full object-cover"
-					})
-				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "p-8 md:p-10",
-					children: [
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-							className: "text-xs uppercase tracking-[0.25em] text-gold-deep font-semibold",
-							children: "Premium Export Grade"
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-							className: "mt-2 font-display text-3xl font-bold text-ink",
-							children: product.name
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-							className: "mt-1 text-muted-foreground italic",
-							children: product.tagline
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-							className: "mt-5 text-sm leading-relaxed text-foreground/80",
-							children: product.description
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-							className: "mt-6 grid grid-cols-2 gap-3",
-							children: product.specs.map((s) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "rounded-lg border border-border bg-secondary/50 px-3 py-2",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: "text-[10px] uppercase tracking-wider text-muted-foreground",
-									children: s.label
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: "text-sm font-semibold text-ink",
-									children: s.value
-								})]
-							}, s.label))
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("dl", {
-							className: "mt-6 space-y-2 text-sm",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "flex gap-2",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("dt", {
-									className: "font-semibold text-ink min-w-24",
-									children: "Packaging:"
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("dd", {
-									className: "text-foreground/80",
-									children: product.packaging
-								})]
-							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "flex gap-2",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("dt", {
-									className: "font-semibold text-ink min-w-24",
-									children: "Origin:"
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("dd", {
-									className: "text-foreground/80",
-									children: product.origin
-								})]
-							})]
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "mt-8 flex flex-wrap gap-3",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-								href: waLink,
-								target: "_blank",
-								rel: "noopener noreferrer",
-								className: "inline-flex items-center justify-center rounded-full bg-gradient-gold px-6 py-3 text-sm font-semibold text-ink shadow-gold hover:opacity-90",
-								children: "Request Quote"
-							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-								href: "mailto:info@emperorexports.in",
-								className: "inline-flex items-center justify-center rounded-full border border-ink px-6 py-3 text-sm font-semibold text-ink hover:bg-ink hover:text-white transition",
-								children: "Email Enquiry"
-							})]
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "overflow-y-auto overscroll-contain flex-1",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "grid md:grid-cols-2",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						className: "bg-ink h-48 md:h-full shrink-0",
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+							src: product.image,
+							alt: product.name,
+							className: "w-full h-full object-cover"
 						})
-					]
-				})]
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "p-6 md:p-10",
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								className: "text-xs uppercase tracking-[0.25em] text-gold-deep font-semibold",
+								children: "Premium Export Grade"
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+								className: "mt-2 font-display text-3xl font-bold text-ink",
+								children: product.name
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "mt-1 text-muted-foreground italic",
+								children: product.tagline
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "mt-5 text-sm leading-relaxed text-foreground/80",
+								children: product.description
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								className: "mt-6 grid grid-cols-2 gap-3",
+								children: product.specs.map((s) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "rounded-lg border border-border bg-secondary/50 px-3 py-2",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										className: "text-[10px] uppercase tracking-wider text-muted-foreground",
+										children: s.label
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										className: "text-sm font-semibold text-ink",
+										children: s.value
+									})]
+								}, s.label))
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("dl", {
+								className: "mt-6 space-y-2 text-sm",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "flex gap-2",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("dt", {
+										className: "font-semibold text-ink min-w-24",
+										children: "Packaging:"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("dd", {
+										className: "text-foreground/80",
+										children: product.packaging
+									})]
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "flex gap-2",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("dt", {
+										className: "font-semibold text-ink min-w-24",
+										children: "Origin:"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("dd", {
+										className: "text-foreground/80",
+										children: product.origin
+									})]
+								})]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "mt-8 flex flex-col sm:flex-row gap-3",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+									href: waLink,
+									target: "_blank",
+									rel: "noopener noreferrer",
+									className: "inline-flex items-center justify-center rounded-full bg-gradient-gold px-6 py-3 text-sm font-semibold text-ink shadow-gold hover:opacity-90 w-full sm:w-auto",
+									children: "Request Quote"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+									href: "mailto:info@emperorexports.in",
+									className: "inline-flex items-center justify-center rounded-full border border-ink px-6 py-3 text-sm font-semibold text-ink hover:bg-ink hover:text-white transition w-full sm:w-auto",
+									children: "Email Enquiry"
+								})]
+							})
+						]
+					})]
+				})
 			})]
 		})
 	}), document.body);

@@ -4,10 +4,10 @@ import { A as Facebook, B as ArrowUp, C as Instagram, D as Globe, S as LayoutGri
 import { _ as useRouter, c as HeadContent, d as Outlet, f as lazyRouteComponent, h as Link, m as createRootRouteWithContext, p as createFileRoute, s as Scripts, u as createRouter } from "../_libs/@tanstack/react-router+[...].mjs";
 import { n as Route$8 } from "./about--iXDearc.mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-C7OFzHkT.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-CViyHLMR.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
-var styles_default = "/assets/styles-B7WGFUT8.css";
+var styles_default = "/assets/styles-D_DQTao_.css";
 var nav = [
 	{
 		to: "/",
@@ -470,7 +470,7 @@ function RootComponent() {
 		})
 	});
 }
-var $$splitComponentImporter$6 = () => import("./routes-D1HlHpsQ.mjs");
+var $$splitComponentImporter$6 = () => import("./routes-DeCtsEAp.mjs");
 var Route$6 = createFileRoute("/")({
 	head: () => ({ meta: [
 		{ title: "Emperor Exports & Imports — Premium Indian Agri Exporter" },
@@ -584,7 +584,7 @@ var Route$1 = createFileRoute("/markets")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-var $$splitComponentImporter = () => import("./products-DFtYj6L3.mjs");
+var $$splitComponentImporter = () => import("./products-D0bEUh7b.mjs");
 var Route = createFileRoute("/products")({
 	head: () => ({ meta: [
 		{ title: "Products — Emperor Exports & Imports" },
