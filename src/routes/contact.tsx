@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { PageHero } from "./about";
 import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
 
 export const Route = createFileRoute("/contact")({
@@ -26,12 +25,10 @@ function Contact() {
   const [submitted, setSubmitted] = useState(false);
   return (
     <div className="animate-fade-in-up">
-      <PageHero
-        eyebrow="Get in Touch"
-        title="Let's start a shipment."
-        subtitle="Send your requirement, and we'll reply within 24 hours with specs and pricing."
-      />
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 grid lg:grid-cols-5 gap-10">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-6">
+        <h1 className="font-display text-2xl md:text-3xl text-ink font-bold">Get in Touch</h1>
+      </div>
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-20 pt-8 grid lg:grid-cols-5 gap-10">
         <div className="lg:col-span-2 space-y-4">
           <ContactCard
             icon={MapPin}
@@ -82,6 +79,22 @@ function Contact() {
         <form
           onSubmit={(e) => {
             e.preventDefault();
+            const formData = new FormData(e.currentTarget);
+            const name = formData.get("name") || "";
+            const company = formData.get("company") || "";
+            const email = formData.get("email") || "";
+            const phone = formData.get("phone") || "";
+            const message = formData.get("message") || "";
+
+            const text = `*New Enquiry from Website*\n\n` +
+              `*Name:* ${name}\n` +
+              `*Company:* ${company}\n` +
+              `*Email:* ${email}\n` +
+              `*Phone:* ${phone}\n\n` +
+              `*Message:*\n${message}`;
+
+            const whatsappUrl = `https://wa.me/919010444415?text=${encodeURIComponent(text)}`;
+            window.open(whatsappUrl, "_blank", "noopener,noreferrer");
             setSubmitted(true);
           }}
           className="lg:col-span-3 rounded-2xl border border-border bg-card p-8 md:p-10"

@@ -1,4 +1,4 @@
-//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v--tClFbhQ.js
+//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-DWFzYX3b.js
 var tsrStartManifest = () => ({ routes: {
 	__root__: {
 		filePath: "C:/Users/PRASANNA/Freelancing/Ganesh_Imports_Exports/src/routes/__root.tsx",
@@ -12,22 +12,22 @@ var tsrStartManifest = () => ({ routes: {
 			"/markets",
 			"/products"
 		],
-		preloads: ["/assets/index-DdqrdZn_.js", "/assets/createLucideIcon-Cq4gx-J7.js"],
+		preloads: ["/assets/index-W5RJHGy2.js", "/assets/createLucideIcon-Cq4gx-J7.js"],
 		scripts: [{ attrs: {
 			type: "module",
 			async: !0,
-			src: "/assets/index-DdqrdZn_.js"
+			src: "/assets/index-W5RJHGy2.js"
 		} }]
 	},
 	"/": {
 		filePath: "C:/Users/PRASANNA/Freelancing/Ganesh_Imports_Exports/src/routes/index.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/routes-CjPYshpG.js",
+			"/assets/routes-B06h6Ipf.js",
 			"/assets/arrow-right-BMoaUOVI.js",
 			"/assets/award-B69tgj36.js",
 			"/assets/ship-CmFezhxo.js",
-			"/assets/ProductCard-DPs1PCYs.js",
+			"/assets/ProductCard-Qkyv4-He.js",
 			"/assets/rice-BzVWQP43.js",
 			"/assets/hero-export-C4Bf5XmO.js",
 			"/assets/why-emperor-globe-DbnCAmlA.js"
@@ -42,7 +42,7 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "C:/Users/PRASANNA/Freelancing/Ganesh_Imports_Exports/src/routes/blog.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/blog-CvXKeWOm.js",
+			"/assets/blog-DhscXLJI.js",
 			"/assets/arrow-right-BMoaUOVI.js",
 			"/assets/rice-BzVWQP43.js",
 			"/assets/hero-export-C4Bf5XmO.js",
@@ -52,18 +52,18 @@ var tsrStartManifest = () => ({ routes: {
 	"/certifications": {
 		filePath: "C:/Users/PRASANNA/Freelancing/Ganesh_Imports_Exports/src/routes/certifications.tsx",
 		children: void 0,
-		preloads: ["/assets/certifications-BSBikBGA.js", "/assets/award-B69tgj36.js"]
+		preloads: ["/assets/certifications-DrLORjak.js", "/assets/award-B69tgj36.js"]
 	},
 	"/contact": {
 		filePath: "C:/Users/PRASANNA/Freelancing/Ganesh_Imports_Exports/src/routes/contact.tsx",
 		children: void 0,
-		preloads: ["/assets/contact-yIwANiRB.js"]
+		preloads: ["/assets/contact-Csvwb5Df.js"]
 	},
 	"/export-process": {
 		filePath: "C:/Users/PRASANNA/Freelancing/Ganesh_Imports_Exports/src/routes/export-process.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/export-process-CFPAUx-J.js",
+			"/assets/export-process-CWu03K5w.js",
 			"/assets/arrow-right-BMoaUOVI.js",
 			"/assets/award-B69tgj36.js",
 			"/assets/ship-CmFezhxo.js",
@@ -74,12 +74,12 @@ var tsrStartManifest = () => ({ routes: {
 	"/markets": {
 		filePath: "C:/Users/PRASANNA/Freelancing/Ganesh_Imports_Exports/src/routes/markets.tsx",
 		children: void 0,
-		preloads: ["/assets/markets-DuR8rfJa.js", "/assets/arrow-right-BMoaUOVI.js"]
+		preloads: ["/assets/markets-C8KRSOtv.js", "/assets/arrow-right-BMoaUOVI.js"]
 	},
 	"/products": {
 		filePath: "C:/Users/PRASANNA/Freelancing/Ganesh_Imports_Exports/src/routes/products.tsx",
 		children: void 0,
-		preloads: ["/assets/products-B7lsiy6D.js", "/assets/ProductCard-DPs1PCYs.js"]
+		preloads: ["/assets/products-2bmS6EX_.js", "/assets/ProductCard-Qkyv4-He.js"]
 	}
 } });
 //#endregion

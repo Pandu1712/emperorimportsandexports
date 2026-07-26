@@ -1,4 +1,5 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { X } from "lucide-react";
 import type { Product } from "@/data/products";
 
@@ -9,7 +10,10 @@ export function ProductModal({
   product: Product | null;
   onClose: () => void;
 }) {
+  const [mounted, setMounted] = useState(false);
+
   useEffect(() => {
+    setMounted(true);
     if (!product) return;
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
     document.body.style.overflow = "hidden";
@@ -20,13 +24,13 @@ export function ProductModal({
     };
   }, [product, onClose]);
 
-  if (!product) return null;
+  if (!product || !mounted) return null;
 
   const waLink = `https://wa.me/919010444415?text=${encodeURIComponent(
     `Hello Emperor Exports, I'd like a quote for ${product.name}.`,
   )}`;
 
-  return (
+  return createPortal(
     <div
       className="fixed inset-0 z-[60] flex items-center justify-center bg-ink/70 backdrop-blur-sm p-4 animate-in fade-in"
       onClick={onClose}
@@ -95,6 +99,7 @@ export function ProductModal({
           </div>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }

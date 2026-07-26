@@ -1,20 +1,21 @@
 import { r as __toESM } from "../_runtime.mjs";
 import { n as require_react, r as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
 import { _ as MapPin, g as MessageCircle, p as Phone, v as Mail } from "../_libs/lucide-react.mjs";
-import { t as PageHero } from "./about--iXDearc.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/contact-DB0224NT.js
+//#region node_modules/.nitro/vite/services/ssr/assets/contact-BbeKFOCe.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function Contact() {
 	const [submitted, setSubmitted] = (0, import_react.useState)(false);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 		className: "animate-fade-in-up",
-		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(PageHero, {
-			eyebrow: "Get in Touch",
-			title: "Let's start a shipment.",
-			subtitle: "Send your requirement, and we'll reply within 24 hours with specs and pricing."
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+			className: "mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-6",
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
+				className: "font-display text-2xl md:text-3xl text-ink font-bold",
+				children: "Get in Touch"
+			})
 		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
-			className: "mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 grid lg:grid-cols-5 gap-10",
+			className: "mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-20 pt-8 grid lg:grid-cols-5 gap-10",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "lg:col-span-2 space-y-4",
 				children: [
@@ -70,6 +71,10 @@ function Contact() {
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("form", {
 				onSubmit: (e) => {
 					e.preventDefault();
+					const formData = new FormData(e.currentTarget);
+					const text = `*New Enquiry from Website*\n\n*Name:* ${formData.get("name") || ""}\n*Company:* ${formData.get("company") || ""}\n*Email:* ${formData.get("email") || ""}\n*Phone:* ${formData.get("phone") || ""}\n\n*Message:*\n${formData.get("message") || ""}`;
+					const whatsappUrl = `https://wa.me/919010444415?text=${encodeURIComponent(text)}`;
+					window.open(whatsappUrl, "_blank", "noopener,noreferrer");
 					setSubmitted(true);
 				},
 				className: "lg:col-span-3 rounded-2xl border border-border bg-card p-8 md:p-10",

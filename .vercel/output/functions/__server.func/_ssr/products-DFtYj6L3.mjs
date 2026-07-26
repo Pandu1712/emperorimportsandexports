@@ -1,8 +1,8 @@
 import { r as __toESM } from "../_runtime.mjs";
 import { n as require_react, r as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
 import { t as PageHero } from "./about--iXDearc.mjs";
-import { n as ProductModal, r as products, t as ProductCard } from "./ProductCard-CqvkAsL1.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/products-Cqepp3gX.js
+import { n as ProductModal, r as products, t as ProductCard } from "./ProductCard-DEw2XUTy.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/products-DFtYj6L3.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function ProductsPage() {

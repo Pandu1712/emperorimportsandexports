@@ -2,9 +2,11 @@ import { r as __toESM } from "../_runtime.mjs";
 import { n as require_react, r as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
 import { O as Flame, V as ArrowRight, c as Sprout, n as Wheat, o as TreePalm, t as X, x as Leaf } from "../_libs/lucide-react.mjs";
 import { n as turmeric_default, t as rice_default } from "./rice-B7b4Dz-c.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/ProductCard-CqvkAsL1.js
+import { g as require_react_dom } from "../_libs/@tanstack/react-router+[...].mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/ProductCard-DEw2XUTy.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
+var import_react_dom = require_react_dom();
 var products = [
 	{
 		id: "turmeric-powder",
@@ -170,7 +172,9 @@ var products = [
 	}
 ];
 function ProductModal({ product, onClose }) {
+	const [mounted, setMounted] = (0, import_react.useState)(false);
 	(0, import_react.useEffect)(() => {
+		setMounted(true);
 		if (!product) return;
 		const onKey = (e) => e.key === "Escape" && onClose();
 		document.body.style.overflow = "hidden";
@@ -180,9 +184,9 @@ function ProductModal({ product, onClose }) {
 			window.removeEventListener("keydown", onKey);
 		};
 	}, [product, onClose]);
-	if (!product) return null;
+	if (!product || !mounted) return null;
 	const waLink = `https://wa.me/919010444415?text=${encodeURIComponent(`Hello Emperor Exports, I'd like a quote for ${product.name}.`)}`;
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+	return (0, import_react_dom.createPortal)(/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 		className: "fixed inset-0 z-[60] flex items-center justify-center bg-ink/70 backdrop-blur-sm p-4 animate-in fade-in",
 		onClick: onClose,
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -274,7 +278,7 @@ function ProductModal({ product, onClose }) {
 				})]
 			})]
 		})
-	});
+	}), document.body);
 }
 function getProductIcon(id) {
 	switch (id) {
