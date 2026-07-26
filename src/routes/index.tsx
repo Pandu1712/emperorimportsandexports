@@ -10,7 +10,6 @@ import {
   Truck,
   Package,
   Users,
-  Play,
   FileText,
   Leaf,
 } from "lucide-react";
@@ -141,14 +140,6 @@ function Home() {
                   <ArrowRight size={14} />
                 </span>
               </Link>
-
-              <button
-                onClick={() => alert("Watch Our Story")}
-                className="inline-flex items-center gap-2.5 px-6 py-3.5 text-sm font-semibold text-white hover:text-gold transition"
-              >
-                <Play size={20} className="fill-none text-white hover:text-gold" />
-                <span>Watch Our Story</span>
-              </button>
             </div>
           </div>
         </div>

@@ -711,16 +711,6 @@ var Phone = createLucideIcon("phone", [["path", {
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var Play = createLucideIcon("play", [["path", {
-	d: "M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z",
-	key: "10ikf1"
-}]]);
-/**
-* @license lucide-react v0.575.0 - ISC
-*
-* This source code is licensed under the ISC license.
-* See the LICENSE file in the root directory of this source tree.
-*/
 var ShieldCheck = createLucideIcon("shield-check", [["path", {
 	d: "M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z",
 	key: "oel41y"
@@ -972,4 +962,4 @@ var X = createLucideIcon("x", [["path", {
 	key: "d8bk6v"
 }]]);
 //#endregion
-export { Facebook as A, ArrowUp as B, Instagram as C, Globe as D, Handshake as E, Castle as F, ArrowLeft as H, Calendar as I, Building as L, Compass as M, Clock as N, Flame as O, CircleCheck as P, Building2 as R, LayoutGrid as S, Headphones as T, ArrowRight as V, MapPin as _, Trees as a, Lightbulb as b, Sprout as c, ShieldCheck as d, Play as f, MessageCircle as g, Mountain as h, Truck as i, Eye as j, FileText as k, Ship as l, Package as m, Wheat as n, TreePalm as o, Phone as p, Users as r, Target as s, X as t, Shield as u, Mail as v, Heart as w, Leaf as x, Linkedin as y, Award as z };
+export { Eye as A, ArrowRight as B, Heart as C, Flame as D, Globe as E, Calendar as F, Building as I, Building2 as L, Clock as M, CircleCheck as N, FileText as O, Castle as P, Award as R, Instagram as S, Handshake as T, ArrowLeft as V, Mail as _, Trees as a, Leaf as b, Sprout as c, ShieldCheck as d, Phone as f, MapPin as g, MessageCircle as h, Truck as i, Compass as j, Facebook as k, Ship as l, Mountain as m, Wheat as n, TreePalm as o, Package as p, Users as r, Target as s, X as t, Shield as u, Linkedin as v, Headphones as w, LayoutGrid as x, Lightbulb as y, ArrowUp as z };

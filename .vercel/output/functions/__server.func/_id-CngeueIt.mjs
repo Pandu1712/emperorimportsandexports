@@ -1,7 +1,7 @@
 import { n as require_jsx_runtime } from "./_libs/react+tanstack__react-query.mjs";
 import { h as Link } from "./_libs/@tanstack/react-router+[...].mjs";
 import { t as Route } from "./_id-BMmw19El.mjs";
-import { H as ArrowLeft, g as MessageCircle, v as Mail } from "./_libs/lucide-react.mjs";
+import { V as ArrowLeft, _ as Mail, h as MessageCircle } from "./_libs/lucide-react.mjs";
 //#region node_modules/.nitro/vite/services/ssr/assets/_id-CngeueIt.js
 var import_jsx_runtime = require_jsx_runtime();
 function ProductDetailPage() {

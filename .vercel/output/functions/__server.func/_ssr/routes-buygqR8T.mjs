@@ -1,11 +1,11 @@
 import { t as products } from "./products-BmNw7Nds.mjs";
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
 import { h as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { D as Globe, N as Clock, V as ArrowRight, d as ShieldCheck, f as Play, i as Truck, l as Ship, m as Package, r as Users, x as Leaf, z as Award } from "../_libs/lucide-react.mjs";
+import { B as ArrowRight, E as Globe, M as Clock, R as Award, b as Leaf, d as ShieldCheck, i as Truck, l as Ship, p as Package, r as Users } from "../_libs/lucide-react.mjs";
 import { t as hero_export_default } from "./hero-export-Dq4a_cfn.mjs";
 import { t as why_emperor_globe_default } from "./why-emperor-globe-Ccn7F-Fn.mjs";
 import { t as ProductCard } from "./ProductCard-DZ-2lj-d.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-B_7uuF95.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-buygqR8T.js
 var import_jsx_runtime = require_jsx_runtime();
 function Home() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -112,23 +112,16 @@ function Home() {
 										})
 									]
 								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "mt-8 flex flex-wrap items-center gap-6",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, {
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, {
 										to: "/products",
 										className: "inline-flex items-center gap-4 rounded-full bg-gradient-gold pl-7 pr-2 py-2 text-sm font-semibold text-ink shadow-gold hover:opacity-90 transition",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Explore Our Products" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 											className: "h-8 w-8 rounded-full bg-white flex items-center justify-center text-ink",
 											children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowRight, { size: 14 })
 										})]
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-										onClick: () => alert("Watch Our Story"),
-										className: "inline-flex items-center gap-2.5 px-6 py-3.5 text-sm font-semibold text-white hover:text-gold transition",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Play, {
-											size: 20,
-											className: "fill-none text-white hover:text-gold"
-										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Watch Our Story" })]
-									})]
+									})
 								})
 							]
 						})

@@ -1,6 +1,6 @@
 import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
-import { _ as MapPin, g as MessageCircle, p as Phone, v as Mail } from "../_libs/lucide-react.mjs";
+import { _ as Mail, f as Phone, g as MapPin, h as MessageCircle } from "../_libs/lucide-react.mjs";
 //#region node_modules/.nitro/vite/services/ssr/assets/contact-BbeKFOCe.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();

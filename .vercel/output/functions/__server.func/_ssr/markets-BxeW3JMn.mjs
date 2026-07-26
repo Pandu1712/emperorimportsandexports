@@ -1,6 +1,6 @@
 import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
-import { F as Castle, L as Building, M as Compass, R as Building2, V as ArrowRight, a as Trees, h as Mountain } from "../_libs/lucide-react.mjs";
+import { B as ArrowRight, I as Building, L as Building2, P as Castle, a as Trees, j as Compass, m as Mountain } from "../_libs/lucide-react.mjs";
 import { t as PageHero } from "./about--iXDearc.mjs";
 //#region node_modules/.nitro/vite/services/ssr/assets/markets-BxeW3JMn.js
 var import_react = /* @__PURE__ */ __toESM(require_react());

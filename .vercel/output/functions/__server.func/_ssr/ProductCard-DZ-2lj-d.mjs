@@ -1,6 +1,6 @@
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
 import { h as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { O as Flame, V as ArrowRight, c as Sprout, n as Wheat, o as TreePalm, x as Leaf } from "../_libs/lucide-react.mjs";
+import { B as ArrowRight, D as Flame, b as Leaf, c as Sprout, n as Wheat, o as TreePalm } from "../_libs/lucide-react.mjs";
 //#region node_modules/.nitro/vite/services/ssr/assets/ProductCard-DZ-2lj-d.js
 var import_jsx_runtime = require_jsx_runtime();
 function getProductIcon(id) {

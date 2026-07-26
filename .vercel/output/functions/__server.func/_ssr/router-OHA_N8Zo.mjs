@@ -2,13 +2,13 @@ import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react, t as QueryClientProvider } from "../_libs/react+tanstack__react-query.mjs";
 import { c as HeadContent, d as Outlet, f as lazyRouteComponent, g as useRouter, h as Link, m as createRootRouteWithContext, p as createFileRoute, s as Scripts, u as createRouter } from "../_libs/@tanstack/react-router+[...].mjs";
 import { t as Route$9 } from "../_id-BMmw19El.mjs";
-import { A as Facebook, B as ArrowUp, C as Instagram, D as Globe, S as LayoutGrid, _ as MapPin, k as FileText, p as Phone, t as X, v as Mail, y as Linkedin } from "../_libs/lucide-react.mjs";
+import { E as Globe, O as FileText, S as Instagram, _ as Mail, f as Phone, g as MapPin, k as Facebook, t as X, v as Linkedin, x as LayoutGrid, z as ArrowUp } from "../_libs/lucide-react.mjs";
 import { n as Route$10 } from "./about--iXDearc.mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-BbkDH76i.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-OHA_N8Zo.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
-var styles_default = "/assets/styles-D7PPwM5w.css";
+var styles_default = "/assets/styles-QWhR28em.css";
 var nav = [
 	{
 		to: "/",
@@ -471,7 +471,7 @@ function RootComponent() {
 		})
 	});
 }
-var $$splitComponentImporter$7 = () => import("./routes-B_7uuF95.mjs");
+var $$splitComponentImporter$7 = () => import("./routes-buygqR8T.mjs");
 var Route$7 = createFileRoute("/")({
 	head: () => ({ meta: [
 		{ title: "Emperor Exports & Imports — Premium Indian Agri Exporter" },
