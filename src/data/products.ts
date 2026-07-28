@@ -1,15 +1,21 @@
-import turmeric from "@/assets/turmeric.jpg";
-import coconuts from "@/assets/coconuts.jpg";
-import rice from "@/assets/rice.jpg";
-import banana from "@/assets/banana.jpg";
-import yam from "@/assets/yam.jpg";
-import chillies from "@/assets/chillies.jpg";
+import turmeric from "@/assets/turmeric.png";
+import coconuts from "@/assets/coconuts.png";
+import coconutsTender from "@/assets/coconuts-tender.png";
+import rice from "@/assets/rice.png";
+import banana from "@/assets/banana.png";
+import yam from "@/assets/yam-whole.png";
+import yamSliced from "@/assets/yam-sliced.png";
+import yamHarvest from "@/assets/yam-harvest.png";
+import chillies from "@/assets/chillies.png";
+import drumsticks from "@/assets/drumsticks.png";
+import jaggeryPowder from "@/assets/jaggery-powder.png";
 
 export type Product = {
   id: string;
   name: string;
   tagline: string;
   image: string;
+  gallery?: string[];
   description: string;
   specs: { label: string; value: string }[];
   packaging: string;
@@ -38,12 +44,13 @@ export const products: Product[] = [
     name: "Coconuts (Fresh & Semi-Husked)",
     tagline: "Tropical freshness, harvest to hold",
     image: coconuts,
+    gallery: [coconuts, coconutsTender],
     description:
-      "Hand-selected mature coconuts, available fresh whole or semi-husked for extended shelf life. Sweet water content, thick kernel, and consistent size grading for wholesale and retail buyers.",
+      "Hand-selected mature coconuts, available fresh whole or semi-husked for extended shelf life. Sweet water content, thick kernel, and consistent size grading. Also offering fresh green tender coconuts containing mineral-rich sweet natural water.",
     specs: [
       { label: "Grades", value: "Small / Medium / Large" },
       { label: "Weight", value: "400g – 1kg per piece" },
-      { label: "Type", value: "Fresh, Semi-husked" },
+      { label: "Type", value: "Fresh, Semi-husked, Tender Green" },
       { label: "Shelf life", value: "30 – 60 days" },
     ],
     packaging: "Ventilated cartons or mesh bags, palletised for 20ft / 40ft reefer containers.",
@@ -86,8 +93,9 @@ export const products: Product[] = [
     name: "Elephant Foot Yam",
     tagline: "Nutrient-dense root vegetable",
     image: yam,
+    gallery: [yam, yamSliced, yamHarvest],
     description:
-      "Freshly harvested elephant foot yam (Amorphophallus paeoniifolius), known locally as Suran or Jimikand. Prized for its firm texture, mild flavour, and dietary fibre. Cleaned, graded, and cured for export.",
+      "Freshly harvested elephant foot yam (Suran / Jimikand) sourced directly from Indian farms. Prized for its firm texture, mild flavour, and rich dietary fibre. Cleaned, graded, and properly cured for extended export shelf life.",
     specs: [
       { label: "Size", value: "1 – 5 kg per tuber" },
       { label: "Grade", value: "A / B / C" },
@@ -112,5 +120,37 @@ export const products: Product[] = [
     ],
     packaging: "5 kg / 10 kg ventilated cartons, pre-cooled reefer shipping at 8 – 10°C.",
     origin: "Guntur, Andhra Pradesh",
+  },
+  {
+    id: "drumsticks",
+    name: "Drumsticks (Moringa)",
+    tagline: "Nutritious, green and tender",
+    image: drumsticks,
+    description:
+      "Premium-grade fresh green drumsticks (Moringa pods) sourced from certified farms. Handpicked for length, tenderness, and rich green color, offering maximum nutritional value and fresh taste for international markets.",
+    specs: [
+      { label: "Length", value: "30 cm – 45 cm" },
+      { label: "Color", value: "Vibrant green" },
+      { label: "Grade", value: "Export quality, straight & tender" },
+      { label: "Shelf life", value: "7 – 10 days refrigerated" },
+    ],
+    packaging: "Corrugated boxes with aeration, custom packing options available.",
+    origin: "Andhra Pradesh & Tamil Nadu, India",
+  },
+  {
+    id: "jaggery-powder",
+    name: "Premium Jaggery Powder",
+    tagline: "Natural traditional sweetener, chemical-free",
+    image: jaggeryPowder,
+    description:
+      "Naturally processed chemical-free jaggery powder made from high-quality sugarcane juice. It is a healthy alternative to refined sugar, retained in its pure form with minerals intact. Great for organic food importers.",
+    specs: [
+      { label: "Form", value: "Fine powder" },
+      { label: "Color", value: "Golden brown / Light brown" },
+      { label: "Sucrose", value: "Min 85%" },
+      { label: "Shelf life", value: "12 months" },
+    ],
+    packaging: "500g / 1kg stand-up pouches, 25kg bulk bags, custom private labelling.",
+    origin: "Kolhapur (Maharashtra) & Andhra Pradesh, India",
   },
 ];

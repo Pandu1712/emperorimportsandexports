@@ -25,7 +25,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Turmeric, coconuts, rice, bananas, yam and green chillies exported worldwide from Vijayawada, India.",
+          "Turmeric, coconuts, rice, bananas, yam, green chillies, drumsticks, and jaggery powder exported worldwide from Vijayawada, India.",
       },
       { property: "og:title", content: "Emperor Exports & Imports" },
       {

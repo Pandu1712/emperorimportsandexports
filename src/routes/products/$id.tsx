@@ -1,6 +1,8 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { products } from "@/data/products";
 import { ArrowLeft, MessageCircle, Mail } from "lucide-react";
+import { useState, useEffect } from "react";
+import { ProductCard } from "@/components/ProductCard";
 
 export const Route = createFileRoute("/products/$id")({
   loader: ({ params }) => {
@@ -24,6 +26,12 @@ export const Route = createFileRoute("/products/$id")({
 
 function ProductDetailPage() {
   const product = Route.useLoaderData();
+  const otherProducts = products.filter((p) => p.id !== product.id);
+  const [activeImage, setActiveImage] = useState(product.image);
+
+  useEffect(() => {
+    setActiveImage(product.image);
+  }, [product.image]);
 
   const waLink = `https://wa.me/919010444415?text=${encodeURIComponent(
     `Hello Emperor Exports, I'd like a quote for ${product.name}.`
@@ -44,13 +52,40 @@ function ProductDetailPage() {
       <div className="bg-white rounded-3xl border border-border/80 shadow-[0_15px_50px_rgba(0,0,0,0.02)] overflow-hidden">
         <div className="grid lg:grid-cols-2 gap-0">
           {/* Product Image Column */}
-          <div className="bg-ink aspect-square lg:aspect-auto min-h-[300px] lg:min-h-[600px] relative">
-            <img
-              src={product.image}
-              alt={product.name}
-              className="absolute inset-0 h-full w-full object-cover"
-              loading="eager"
-            />
+          <div className="bg-ink flex flex-col justify-center p-6 lg:p-10 border-b lg:border-b-0 lg:border-r border-border/40 min-h-[380px] lg:min-h-[600px]">
+            {/* Active Image Container */}
+            <div className="relative aspect-square w-full rounded-2xl overflow-hidden shadow-md bg-stone-100 flex-1 min-h-[280px] lg:min-h-[400px]">
+              <img
+                src={activeImage}
+                alt={product.name}
+                className="absolute inset-0 h-full w-full object-cover transition-all duration-500 ease-in-out hover:scale-105"
+                loading="eager"
+                key={activeImage}
+              />
+            </div>
+
+            {/* Gallery Thumbnails */}
+            {product.gallery && product.gallery.length > 0 && (
+              <div className="mt-6 flex flex-wrap gap-3 justify-center">
+                {product.gallery.map((imgUrl, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setActiveImage(imgUrl)}
+                    className={`relative h-20 w-20 rounded-xl overflow-hidden border-2 transition-all duration-300 ${
+                      activeImage === imgUrl
+                        ? "border-[#b45309] shadow-md scale-105"
+                        : "border-transparent opacity-60 hover:opacity-100 hover:scale-105"
+                    }`}
+                  >
+                    <img
+                      src={imgUrl}
+                      alt={`${product.name} gallery image ${index + 1}`}
+                      className="h-full w-full object-cover"
+                    />
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* Product Details Column */}
@@ -140,6 +175,31 @@ function ProductDetailPage() {
               </a>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Other Products Section */}
+      <div className="mt-20 border-t border-border/80 pt-16">
+        <div className="text-center max-w-2xl mx-auto mb-12">
+          <div className="flex items-center justify-center gap-3">
+            <div className="h-[1px] w-6 bg-[#b45309]/30" />
+            <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#b45309]/80">
+              Discover More
+            </span>
+            <div className="h-[1px] w-6 bg-[#b45309]/30" />
+          </div>
+          <h2 className="mt-4 font-display text-3xl font-bold text-ink leading-tight">
+            Other Premium Products
+          </h2>
+          <p className="mt-2.5 text-sm text-muted-foreground leading-relaxed">
+            Browse our other premium-grade export offerings from local Indian farms.
+          </p>
+        </div>
+
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {otherProducts.map((p) => (
+            <ProductCard key={p.id} product={p} />
+          ))}
         </div>
       </div>
     </div>

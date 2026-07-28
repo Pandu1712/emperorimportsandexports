@@ -11,10 +11,12 @@ import {
   FileText,
   Lightbulb,
 } from "lucide-react";
-import turmeric from "@/assets/turmeric.jpg";
-import rice from "@/assets/rice.jpg";
+import turmeric from "@/assets/turmeric.png";
+import rice from "@/assets/rice.png";
 import heroImg from "@/assets/hero-export.jpg";
 import whyEmperorGlobe from "@/assets/why-emperor-globe.png";
+import { products } from "@/data/products";
+import { ProductCard } from "@/components/ProductCard";
 
 export const Route = createFileRoute("/blog")({
   head: () => ({
@@ -258,6 +260,33 @@ function Blog() {
           </button>
         </div>
       </div>
+
+      {/* Featured Products Section */}
+      <section className="bg-[#fdfcf7] border-t border-border/80 py-20 px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <div className="flex items-center justify-center gap-3">
+              <div className="h-[1px] w-6 bg-[#b45309]/30" />
+              <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#b45309]/80">
+                Premium Sourcing
+              </span>
+              <div className="h-[1px] w-6 bg-[#b45309]/30" />
+            </div>
+            <h2 className="mt-4 font-display text-3xl sm:text-4xl font-bold text-ink leading-tight">
+              Explore Our <span className="text-[#b45309]">Premium</span> Export Range
+            </h2>
+            <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+              Straight from fertile Indian farms, processed to meet global standards. Click any item to request a custom quote.
+            </p>
+          </div>
+
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            {products.map((p) => (
+              <ProductCard key={p.id} product={p} />
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

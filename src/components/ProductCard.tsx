@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { type Product } from "@/data/products";
-import { ArrowRight, Leaf, Palmtree, Wheat, Sprout, Flame } from "lucide-react";
+import { ArrowRight, Leaf, Palmtree, Wheat, Sprout, Flame, Award } from "lucide-react";
 
 interface ProductCardProps {
   product: Product;
@@ -21,6 +21,10 @@ function getProductIcon(id: string) {
       return Sprout;
     case "green-chillies":
       return Flame;
+    case "drumsticks":
+      return Sprout;
+    case "jaggery-powder":
+      return Award;
     default:
       return Leaf;
   }

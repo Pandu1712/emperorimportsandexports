@@ -10,7 +10,7 @@ export const Route = createFileRoute("/products/")({
       {
         name: "description",
         content:
-          "Explore our export catalogue: turmeric powder, coconuts, non-basmati rice, bananas, elephant foot yam and green chillies.",
+          "Explore our export catalogue: turmeric powder, coconuts, non-basmati rice, bananas, elephant foot yam, green chillies, drumsticks, and premium jaggery powder.",
       },
       { property: "og:title", content: "Our Products — Emperor Exports & Imports" },
       {
