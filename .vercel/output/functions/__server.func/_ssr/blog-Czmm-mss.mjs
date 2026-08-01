@@ -1,7 +1,7 @@
 import { r as __toESM } from "../_runtime.mjs";
 import { n as rice_default, r as turmeric_default, t as products } from "./products-DKyzeAFx.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
-import { B as ArrowRight, E as Globe, F as Calendar, O as FileText, b as Leaf, n as Wheat, x as LayoutGrid, y as Lightbulb } from "../_libs/lucide-react.mjs";
+import { E as FileText, L as ArrowRight, M as Calendar, b as LayoutGrid, n as Wheat, v as Lightbulb, w as Globe, y as Leaf } from "../_libs/lucide-react.mjs";
 import { t as ProductCard } from "./ProductCard-8fQYLucH.mjs";
 import { t as hero_export_default } from "./hero-export-Dq4a_cfn.mjs";
 import { t as why_emperor_globe_default } from "./why-emperor-globe-Ccn7F-Fn.mjs";

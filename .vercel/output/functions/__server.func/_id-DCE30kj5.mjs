@@ -3,7 +3,7 @@ import { t as products } from "./_ssr/products-DKyzeAFx.mjs";
 import { n as require_jsx_runtime, r as require_react } from "./_libs/react+tanstack__react-query.mjs";
 import { h as Link } from "./_libs/@tanstack/react-router+[...].mjs";
 import { t as Route } from "./_id-C-UEOvJA.mjs";
-import { V as ArrowLeft, _ as Mail, h as MessageCircle } from "./_libs/lucide-react.mjs";
+import { R as ArrowLeft, _ as Mail, h as MessageCircle } from "./_libs/lucide-react.mjs";
 import { t as ProductCard } from "./_ssr/ProductCard-8fQYLucH.mjs";
 //#region node_modules/.nitro/vite/services/ssr/assets/_id-DCE30kj5.js
 var import_react = /* @__PURE__ */ __toESM(require_react());

@@ -1,6 +1,6 @@
 import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
-import { B as ArrowRight, E as Globe, M as Clock, O as FileText, R as Award, T as Handshake, c as Sprout, l as Ship, p as Package, u as Shield, w as Headphones } from "../_libs/lucide-react.mjs";
+import { C as Handshake, E as FileText, F as Award, L as ArrowRight, S as Headphones, c as Sprout, k as Clock, l as Ship, p as Package, u as Shield, w as Globe } from "../_libs/lucide-react.mjs";
 import { t as hero_export_default } from "./hero-export-Dq4a_cfn.mjs";
 //#region node_modules/.nitro/vite/services/ssr/assets/export-process-D8fnkTHr.js
 var import_react = /* @__PURE__ */ __toESM(require_react());

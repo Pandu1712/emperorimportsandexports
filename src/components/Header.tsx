@@ -6,9 +6,6 @@ import {
   MapPin,
   Mail,
   Phone,
-  Linkedin,
-  Instagram,
-  Facebook,
   Globe,
   FileText,
 } from "lucide-react";
@@ -44,27 +41,14 @@ export function Header() {
               <span>info@emperorexports.com</span>
             </a>
             <a
-              href="tel:+919876543210"
+              href="tel:+919010444415"
               className="flex items-center gap-2 hover:text-white transition-colors"
             >
               <Phone size={13} className="text-gold" />
-              <span>+91 98765 43210</span>
+              <span>+91 90104 44415</span>
             </a>
           </div>
           <div className="flex items-center gap-6">
-            <div className="flex items-center gap-3">
-              <span>Follow us:</span>
-              <a href="#" className="hover:text-white transition-colors">
-                <Linkedin size={13} />
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
-                <Instagram size={13} />
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
-                <Facebook size={13} />
-              </a>
-            </div>
-            <div className="h-3 w-px bg-white/20" />
             <div className="flex items-center gap-2 text-white">
               <Globe size={13} className="text-gold" />
               <span>Global Agri Export House</span>

@@ -381,16 +381,6 @@ var Eye = createLucideIcon("eye", [["path", {
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var Facebook = createLucideIcon("facebook", [["path", {
-	d: "M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z",
-	key: "1jg4f8"
-}]]);
-/**
-* @license lucide-react v0.575.0 - ISC
-*
-* This source code is licensed under the ISC license.
-* See the LICENSE file in the root directory of this source tree.
-*/
 var FileText = createLucideIcon("file-text", [
 	["path", {
 		d: "M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z",
@@ -499,34 +489,6 @@ var Heart = createLucideIcon("heart", [["path", {
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
-var Instagram = createLucideIcon("instagram", [
-	["rect", {
-		width: "20",
-		height: "20",
-		x: "2",
-		y: "2",
-		rx: "5",
-		ry: "5",
-		key: "2e1cvw"
-	}],
-	["path", {
-		d: "M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z",
-		key: "9exkf1"
-	}],
-	["line", {
-		x1: "17.5",
-		x2: "17.51",
-		y1: "6.5",
-		y2: "6.5",
-		key: "r4j83e"
-	}]
-]);
-/**
-* @license lucide-react v0.575.0 - ISC
-*
-* This source code is licensed under the ISC license.
-* See the LICENSE file in the root directory of this source tree.
-*/
 var LayoutGrid = createLucideIcon("layout-grid", [
 	["rect", {
 		width: "7",
@@ -592,31 +554,6 @@ var Lightbulb = createLucideIcon("lightbulb", [
 	["path", {
 		d: "M10 22h4",
 		key: "ceow96"
-	}]
-]);
-/**
-* @license lucide-react v0.575.0 - ISC
-*
-* This source code is licensed under the ISC license.
-* See the LICENSE file in the root directory of this source tree.
-*/
-var Linkedin = createLucideIcon("linkedin", [
-	["path", {
-		d: "M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z",
-		key: "c2jq9f"
-	}],
-	["rect", {
-		width: "4",
-		height: "12",
-		x: "2",
-		y: "9",
-		key: "mk3on5"
-	}],
-	["circle", {
-		cx: "4",
-		cy: "4",
-		r: "2",
-		key: "bt5ra8"
 	}]
 ]);
 /**
@@ -962,4 +899,4 @@ var X = createLucideIcon("x", [["path", {
 	key: "d8bk6v"
 }]]);
 //#endregion
-export { Eye as A, ArrowRight as B, Heart as C, Flame as D, Globe as E, Calendar as F, Building as I, Building2 as L, Clock as M, CircleCheck as N, FileText as O, Castle as P, Award as R, Instagram as S, Handshake as T, ArrowLeft as V, Mail as _, Trees as a, Leaf as b, Sprout as c, ShieldCheck as d, Phone as f, MapPin as g, MessageCircle as h, Truck as i, Compass as j, Facebook as k, Ship as l, Mountain as m, Wheat as n, TreePalm as o, Package as p, Users as r, Target as s, X as t, Shield as u, Linkedin as v, Headphones as w, LayoutGrid as x, Lightbulb as y, ArrowUp as z };
+export { CircleCheck as A, Handshake as C, Eye as D, FileText as E, Award as F, ArrowUp as I, ArrowRight as L, Calendar as M, Building as N, Compass as O, Building2 as P, ArrowLeft as R, Headphones as S, Flame as T, Mail as _, Trees as a, LayoutGrid as b, Sprout as c, ShieldCheck as d, Phone as f, MapPin as g, MessageCircle as h, Truck as i, Castle as j, Clock as k, Ship as l, Mountain as m, Wheat as n, TreePalm as o, Package as p, Users as r, Target as s, X as t, Shield as u, Lightbulb as v, Globe as w, Heart as x, Leaf as y };

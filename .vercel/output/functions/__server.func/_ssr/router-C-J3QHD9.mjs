@@ -2,13 +2,13 @@ import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react, t as QueryClientProvider } from "../_libs/react+tanstack__react-query.mjs";
 import { c as HeadContent, d as Outlet, f as lazyRouteComponent, g as useRouter, h as Link, m as createRootRouteWithContext, p as createFileRoute, s as Scripts, u as createRouter } from "../_libs/@tanstack/react-router+[...].mjs";
 import { t as Route$9 } from "../_id-C-UEOvJA.mjs";
-import { E as Globe, O as FileText, S as Instagram, _ as Mail, f as Phone, g as MapPin, k as Facebook, t as X, v as Linkedin, x as LayoutGrid, z as ArrowUp } from "../_libs/lucide-react.mjs";
+import { E as FileText, I as ArrowUp, _ as Mail, b as LayoutGrid, f as Phone, g as MapPin, t as X, w as Globe } from "../_libs/lucide-react.mjs";
 import { n as Route$10 } from "./about-B655kjj7.mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-Cv2A7OMR.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-C-J3QHD9.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
-var styles_default = "/assets/styles-D16S2DF6.css";
+var styles_default = "/assets/styles-bhy5vxzN.css";
 var nav = [
 	{
 		to: "/",
@@ -68,47 +68,23 @@ function Header() {
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "info@emperorexports.com" })]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-						href: "tel:+919876543210",
+						href: "tel:+919010444415",
 						className: "flex items-center gap-2 hover:text-white transition-colors",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Phone, {
 							size: 13,
 							className: "text-gold"
-						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "+91 98765 43210" })]
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "+91 90104 44415" })]
 					})
 				]
-			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 				className: "flex items-center gap-6",
-				children: [
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "flex items-center gap-3",
-						children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Follow us:" }),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-								href: "#",
-								className: "hover:text-white transition-colors",
-								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Linkedin, { size: 13 })
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-								href: "#",
-								className: "hover:text-white transition-colors",
-								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Instagram, { size: 13 })
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-								href: "#",
-								className: "hover:text-white transition-colors",
-								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Facebook, { size: 13 })
-							})
-						]
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "h-3 w-px bg-white/20" }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "flex items-center gap-2 text-white",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Globe, {
-							size: 13,
-							className: "text-gold"
-						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Global Agri Export House" })]
-					})
-				]
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "flex items-center gap-2 text-white",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Globe, {
+						size: 13,
+						className: "text-gold"
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Global Agri Export House" })]
+				})
 			})]
 		})
 	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", {
