@@ -12,12 +12,12 @@ export const Route = createFileRoute("/products/$id")({
     }
     return product;
   },
-  head: ({ data }) => ({
+  head: ({ loaderData }) => ({
     meta: [
-      { title: `${data?.name || "Product Details"} — Emperor Exports & Imports` },
+      { title: `${loaderData?.name || "Product Details"} — Emperor Exports & Imports` },
       {
         name: "description",
-        content: data?.description || "Explore product specifications, origin and packaging details.",
+        content: loaderData?.description || "Explore product specifications, origin and packaging details.",
       },
     ],
   }),
@@ -38,11 +38,11 @@ function ProductDetailPage() {
   )}`;
 
   return (
-    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 md:py-20 animate-fade-in-up">
+    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 md:py-10 animate-fade-in-up">
       {/* Back Button */}
       <Link
         to="/products"
-        className="inline-flex items-center gap-2 text-sm font-semibold text-[#b45309] hover:opacity-85 transition mb-8 group"
+        className="inline-flex items-center gap-2 text-sm font-semibold text-[#b45309] hover:opacity-85 transition mb-4 group"
       >
         <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
         <span>Back to Products</span>
@@ -179,8 +179,8 @@ function ProductDetailPage() {
       </div>
 
       {/* Other Products Section */}
-      <div className="mt-20 border-t border-border/80 pt-16">
-        <div className="text-center max-w-2xl mx-auto mb-12">
+      <div className="mt-10 border-t border-border/80 pt-8">
+        <div className="text-center max-w-2xl mx-auto mb-6">
           <div className="flex items-center justify-center gap-3">
             <div className="h-[1px] w-6 bg-[#b45309]/30" />
             <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#b45309]/80">

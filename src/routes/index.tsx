@@ -52,7 +52,7 @@ function Home() {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#021008] via-[#021008]/90 to-transparent" />
 
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-14 pb-36 md:pt-18 md:pb-44">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-10 pb-20 md:pt-12 md:pb-24">
           <div className="max-w-4xl">
             {/* Subtitle */}
             <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-gold font-medium">
@@ -406,7 +406,7 @@ function Home() {
       </section>
 
       {/* Intro */}
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24">
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
         <div className="grid md:grid-cols-2 gap-14 items-center">
           <div>
             <div className="text-xs uppercase tracking-[0.3em] text-gold-deep font-semibold">
@@ -461,9 +461,9 @@ function Home() {
       </section>
 
       {/* Products */}
-      <section className="bg-secondary/40 py-24 border-y border-border">
+      <section className="bg-secondary/40 py-10 border-y border-border">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap items-end justify-between gap-4 mb-12">
+          <div className="flex flex-wrap items-end justify-between gap-4 mb-6">
             <div>
               <div className="text-xs uppercase tracking-[0.3em] text-gold-deep font-semibold">
                 Our Range
@@ -486,7 +486,7 @@ function Home() {
       </section>
 
       {/* Why us */}
-      <section className="relative overflow-hidden bg-white py-24">
+      <section className="relative overflow-hidden bg-white py-10">
         {/* Giant subtle globe background decoration on the left */}
         <div className="absolute left-[-10%] top-[5%] w-[35%] aspect-square pointer-events-none select-none opacity-[0.07] z-0">
           <img
@@ -528,7 +528,7 @@ function Home() {
             </h2>
 
             {/* Centered Divider with diamond */}
-            <div className="flex items-center justify-center gap-3 mt-4 mb-16">
+            <div className="flex items-center justify-center gap-3 mt-4 mb-8">
               <div className="h-[1px] w-28 bg-gradient-to-r from-transparent to-[#b45309]/30" />
               <span className="text-[#b45309]/70 text-[10px]">✦</span>
               <div className="h-[1px] w-28 bg-gradient-to-l from-transparent to-[#b45309]/30" />
@@ -598,8 +598,8 @@ function Home() {
       </section>
 
       {/* CTA */}
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-24">
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-hero p-10 md:p-16 text-white">
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-10">
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-hero p-6 md:p-8 text-white">
           <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-gold/30 blur-3xl" />
           <div className="relative max-w-2xl">
             <h2 className="font-display text-3xl md:text-5xl">Ready to import from India?</h2>

@@ -30,7 +30,7 @@ function About() {
         subtitle="Emperor Exports & Imports is a family-run agri-export house delivering premium Indian produce to buyers across the globe."
       />
 
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 grid md:grid-cols-2 gap-14 items-center">
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 grid md:grid-cols-2 gap-14 items-center">
         <img
           src={aboutImg}
           alt="Indian farm"
@@ -72,7 +72,7 @@ function About() {
         </div>
       </section>
 
-      <section className="bg-secondary/40 py-20 border-y border-border">
+      <section className="bg-secondary/40 py-10 border-y border-border">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-6">
           {[
             {
@@ -116,7 +116,7 @@ export function PageHero({
 }) {
   return (
     <section className="bg-gradient-hero text-white">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 md:py-32 text-center">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 md:py-16 text-center">
         <div className="text-xs uppercase tracking-[0.3em] text-gold">{eyebrow}</div>
         <h1 className="mt-4 font-display text-5xl md:text-6xl">{title}</h1>
         {subtitle && <p className="mt-5 max-w-2xl mx-auto text-white/70">{subtitle}</p>}

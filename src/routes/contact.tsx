@@ -28,7 +28,7 @@ function Contact() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-6">
         <h1 className="font-display text-2xl md:text-3xl text-ink font-bold">Get in Touch</h1>
       </div>
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-20 pt-8 grid lg:grid-cols-5 gap-10">
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-10 pt-8 grid lg:grid-cols-5 gap-10">
         <div className="lg:col-span-2 space-y-4">
           <ContactCard
             icon={MapPin}

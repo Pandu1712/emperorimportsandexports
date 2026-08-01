@@ -145,8 +145,8 @@ function Markets() {
         subtitle="From regional distributors to national supermarket chains, our containers reach ports across six major global regions."
       />
 
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
-        <div className="grid gap-8 md:grid-cols-2">
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+        <div className="grid gap-6 md:grid-cols-2">
           {regions.map((r, idx) => {
             const Icon = r.icon;
             return (

@@ -3,8 +3,8 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-ink text-white/80 mt-20">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 grid gap-10 md:grid-cols-4">
+    <footer className="bg-ink text-white/80 mt-10">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 grid gap-10 md:grid-cols-4">
         <div>
           <div className="flex items-center gap-3">
             <img src="/logo-final.png" alt="Emperor" className="h-12 w-12" />

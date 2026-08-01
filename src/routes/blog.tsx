@@ -96,7 +96,7 @@ function Blog() {
     <div className="animate-fade-in-up">
       {/* Hero Banner Box */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-10 pb-6 relative z-10">
-        <div className="relative overflow-hidden rounded-[2.5rem] bg-[#fdfcf7] border border-[#f2e2d2] py-20 px-8 md:px-16 text-center shadow-[0_10px_35px_rgba(0,0,0,0.02)]">
+        <div className="relative overflow-hidden rounded-[2.5rem] bg-[#fdfcf7] border border-[#f2e2d2] py-10 px-8 md:px-16 text-center shadow-[0_10px_35px_rgba(0,0,0,0.02)]">
           {/* Background Cargo Ship Silhouette (left side) */}
           <div className="absolute left-[3%] bottom-[5%] w-[25%] opacity-[0.08] pointer-events-none select-none hidden md:block">
             <svg viewBox="0 0 100 60" fill="none" stroke="#7c5625" strokeWidth="0.8" className="w-full h-full">
@@ -230,41 +230,12 @@ function Blog() {
         </div>
       </section>
 
-      {/* Pagination Footer */}
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-24 mt-6">
-        <div className="flex items-center justify-center gap-2">
-          {/* Previous Button */}
-          <button className="h-9 w-9 rounded-lg border border-black/[0.05] bg-white flex items-center justify-center text-muted-foreground hover:bg-[#b45309] hover:text-white transition-colors duration-300">
-            <ArrowRight size={14} className="rotate-180" />
-          </button>
-          
-          {/* Pages */}
-          <button className="h-9 w-9 rounded-lg bg-[#b45309] text-white font-semibold text-sm shadow-md">
-            1
-          </button>
-          <button className="h-9 w-9 rounded-lg border border-black/[0.05] bg-white text-muted-foreground hover:bg-[#b45309]/10 hover:text-ink font-semibold text-sm transition-colors duration-300">
-            2
-          </button>
-          <button className="h-9 w-9 rounded-lg border border-black/[0.05] bg-white text-muted-foreground hover:bg-[#b45309]/10 hover:text-ink font-semibold text-sm transition-colors duration-300">
-            3
-          </button>
-          <button className="h-9 w-9 rounded-lg border border-black/[0.05] bg-white text-muted-foreground hover:bg-[#b45309]/10 hover:text-ink font-semibold text-sm transition-colors duration-300">
-            4
-          </button>
-          <span className="text-muted-foreground px-1 text-sm font-semibold">...</span>
-          
-          {/* Next Button */}
-          <button className="h-9 px-4 rounded-lg border border-black/[0.05] bg-white flex items-center gap-1.5 text-[#b45309] font-bold text-xs hover:bg-[#b45309] hover:text-white transition-colors duration-300 shadow-sm">
-            <span>Next</span>
-            <ArrowRight size={12} />
-          </button>
-        </div>
-      </div>
+
 
       {/* Featured Products Section */}
-      <section className="bg-[#fdfcf7] border-t border-border/80 py-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#fdfcf7] border-t border-border/80 py-10 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          <div className="text-center max-w-2xl mx-auto mb-16">
+          <div className="text-center max-w-2xl mx-auto mb-8">
             <div className="flex items-center justify-center gap-3">
               <div className="h-[1px] w-6 bg-[#b45309]/30" />
               <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#b45309]/80">

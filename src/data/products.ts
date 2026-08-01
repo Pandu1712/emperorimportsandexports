@@ -1,5 +1,5 @@
 import turmeric from "@/assets/turmeric.png";
-import coconuts from "@/assets/coconuts.png";
+import coconuts from "@/assets/coconut2.png";
 import coconutsTender from "@/assets/coconuts-tender.png";
 import rice from "@/assets/rice.png";
 import banana from "@/assets/banana.png";

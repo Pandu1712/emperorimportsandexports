@@ -98,7 +98,7 @@ function ExportProcess() {
   return (
     <div className="animate-fade-in-up">
       {/* Hero Banner Box */}
-      <section className="relative overflow-hidden bg-[#021d10] text-white py-24 px-8 md:px-16 text-center rounded-b-[2.5rem] z-10">
+      <section className="relative overflow-hidden bg-[#021d10] text-white py-10 px-8 md:px-16 text-center rounded-b-[2.5rem] z-10">
         {/* Background logistics image - bright on the edges, faded in the middle */}
         <img
           src={heroImg}
@@ -133,9 +133,9 @@ function ExportProcess() {
       </section>
 
       {/* Six Step Cards Grid */}
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 relative">
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 relative">
         {/* Curved connecting loop path between Card 3 (Row 1) and Card 4 (Row 2) on Desktop */}
-        <div className="absolute inset-0 pointer-events-none hidden lg:block z-0 px-8 py-20">
+        <div className="absolute inset-0 pointer-events-none hidden lg:block z-0 px-8 py-10">
           <div className="relative w-full h-full">
             <svg
               className="absolute inset-0 w-full h-full"
@@ -155,7 +155,7 @@ function ExportProcess() {
         </div>
 
         {/* The Cards Grid */}
-        <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-12 lg:gap-x-14">
+        <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-6 gap-x-6 lg:gap-x-8">
           {steps.map((s, idx) => {
             const Icon = s.icon;
             const stepNum = `0${idx + 1}`;
@@ -200,7 +200,7 @@ function ExportProcess() {
       </section>
 
       {/* Bottom Feature Bar */}
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-24">
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-10">
         <div className="rounded-[2rem] border border-[#f2e2d2] bg-[#fdfaf5]/70 p-6 md:p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {pillars.map((p) => {
             const Icon = p.icon;
