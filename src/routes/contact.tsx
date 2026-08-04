@@ -129,6 +129,57 @@ function Contact() {
           )}
         </form>
       </section>
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16">
+        <h2 className="font-display text-xl md:text-2xl text-ink font-bold mb-6">
+          Manufacturing Unit
+        </h2>
+        <div className="grid md:grid-cols-2 gap-6 mb-6">
+          <div className="rounded-2xl border border-border bg-card p-6 flex gap-4">
+            <div className="h-11 w-11 shrink-0 rounded-xl bg-gradient-gold flex items-center justify-center text-ink shadow-gold">
+              <MapPin size={20} />
+            </div>
+            <div>
+              <div className="text-xs uppercase tracking-widest text-gold-deep font-semibold">
+                Office Location
+              </div>
+              <div className="mt-1 font-semibold text-ink text-base">
+                Marwadi University Office
+              </div>
+              <div className="mt-1 text-sm text-muted-foreground">
+                First Floor, Radha, Krishna Nagar Colony, Visakha B Colony, Srikakulam - 532001, AP, India
+              </div>
+            </div>
+          </div>
+          <div className="rounded-2xl border border-border bg-card p-6 flex gap-4">
+            <div className="h-11 w-11 shrink-0 rounded-xl bg-gradient-gold flex items-center justify-center text-ink shadow-gold">
+              <MapPin size={20} />
+            </div>
+            <div>
+              <div className="text-xs uppercase tracking-widest text-gold-deep font-semibold">
+                Factory Address
+              </div>
+              <div className="mt-1 font-semibold text-ink text-base">
+                Manufacturing Unit
+              </div>
+              <div className="mt-1 text-sm text-muted-foreground">
+                Ground Floor (Below the Office), Srikakulam - 532001, AP, India
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="rounded-2xl border border-border bg-card p-2 md:p-3 shadow-sm overflow-hidden h-[450px]">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3787.9969750847004!2d83.89941215515135!3d18.301746518742135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3c152784b6cf51%3A0xae006aec2b000adb!2sMARWADI%20UNIVERSITY%20OFFICE%20SRIKAKULAM!5e0!3m2!1sen!2sin!4v1785841106932!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style={{ border: 0, borderRadius: "0.75rem" }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Manufacturing Unit Location"
+          />
+        </div>
+      </section>
     </div>
   );
 }
