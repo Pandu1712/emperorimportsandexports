@@ -20,7 +20,7 @@ export const Route = createFileRoute("/certifications")({
         property: "og:description",
         content: "Recognised exporter with all statutory Indian export credentials.",
       },
-      { property: "og:url", content: "https://emperorexports.com/certifications" },
+      { property: "og:url", content: "https://www.emperorexportsandimports.com/certifications" },
     ],
   }),
   component: Certifications,

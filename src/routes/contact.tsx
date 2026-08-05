@@ -20,7 +20,7 @@ export const Route = createFileRoute("/contact")({
         property: "og:description",
         content: "Send us your requirement — we respond within 24 hours.",
       },
-      { property: "og:url", content: "https://emperorexports.com/contact" },
+      { property: "og:url", content: "https://www.emperorexportsandimports.com/contact" },
     ],
   }),
   component: Contact,

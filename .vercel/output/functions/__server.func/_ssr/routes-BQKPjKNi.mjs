@@ -5,16 +5,16 @@ import { F as Award, L as ArrowRight, d as ShieldCheck, i as Truck, k as Clock, 
 import { t as ProductCard } from "./ProductCard-8fQYLucH.mjs";
 import { t as hero_export_default } from "./hero-export-Dq4a_cfn.mjs";
 import { t as why_emperor_globe_default } from "./why-emperor-globe-Ccn7F-Fn.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-r8-KM_EN.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-BQKPjKNi.js
 var import_jsx_runtime = require_jsx_runtime();
 var companySchema = {
 	"@context": "https://schema.org",
 	"@type": "Wholesaler",
 	"name": "Emperor Exports & Imports",
 	"alternateName": "Emperor Imports & Exports",
-	"url": "https://emperorexports.com",
-	"logo": "https://emperorexports.com/logo-final.png",
-	"image": "https://emperorexports.com/logo-final.png",
+	"url": "https://www.emperorexportsandimports.com",
+	"logo": "https://www.emperorexportsandimports.com/logo-final.png",
+	"image": "https://www.emperorexportsandimports.com/logo-final.png",
 	"description": "Premium Indian agricultural exports — spices, fresh produce and staples for global buyers. Sourcing India's finest agricultural produce from Vijayawada and Srikakulam.",
 	"telephone": "+919010444415",
 	"email": "info@emperorexports.com",

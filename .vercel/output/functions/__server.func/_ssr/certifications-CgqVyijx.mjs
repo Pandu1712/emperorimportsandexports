@@ -1,7 +1,7 @@
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
 import { F as Award } from "../_libs/lucide-react.mjs";
-import { t as PageHero } from "./about-Ct7hbvAS.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/certifications-CE7a3Kyl.js
+import { t as PageHero } from "./about-Q-c-KLA0.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/certifications-CgqVyijx.js
 var import_jsx_runtime = require_jsx_runtime();
 var certs = [
 	{

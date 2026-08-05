@@ -1,8 +1,8 @@
 import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { L as ArrowRight, N as Building, O as Compass, P as Building2, a as Trees, j as Castle, m as Mountain } from "../_libs/lucide-react.mjs";
-import { t as PageHero } from "./about-Ct7hbvAS.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/markets-9QzqRohB.js
+import { t as PageHero } from "./about-Q-c-KLA0.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/markets-B1pJKLRp.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var regions = [

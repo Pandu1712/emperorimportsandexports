@@ -2,10 +2,10 @@ import { r as __toESM } from "./_runtime.mjs";
 import { t as products } from "./_ssr/products-DKyzeAFx.mjs";
 import { n as require_jsx_runtime, r as require_react } from "./_libs/react+tanstack__react-query.mjs";
 import { g as Link } from "./_libs/@tanstack/react-router+[...].mjs";
-import { t as Route } from "./_id-GvqDpCc-.mjs";
+import { t as Route } from "./_id-Dgjbkal6.mjs";
 import { R as ArrowLeft, _ as Mail, h as MessageCircle } from "./_libs/lucide-react.mjs";
 import { t as ProductCard } from "./_ssr/ProductCard-8fQYLucH.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/_id-CUvBwWbt.js
+//#region node_modules/.nitro/vite/services/ssr/assets/_id-CWXN5E2x.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function ProductDetailPage() {
@@ -20,7 +20,7 @@ function ProductDetailPage() {
 		"@context": "https://schema.org",
 		"@type": "Product",
 		"name": product.name,
-		"image": `https://emperorexports.com${product.image}`,
+		"image": `https://www.emperorexportsandimports.com${product.image}`,
 		"description": product.description,
 		"brand": {
 			"@type": "Brand",
@@ -31,7 +31,7 @@ function ProductDetailPage() {
 			"priceCurrency": "USD",
 			"price": "Contact for quote",
 			"availability": "https://schema.org/InStock",
-			"url": `https://emperorexports.com/products/${product.id}`
+			"url": `https://www.emperorexportsandimports.com/products/${product.id}`
 		},
 		"additionalProperty": product.specs.map((s) => ({
 			"@type": "PropertyValue",

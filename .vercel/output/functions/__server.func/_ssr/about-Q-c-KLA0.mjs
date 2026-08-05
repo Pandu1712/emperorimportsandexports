@@ -1,6 +1,6 @@
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
 import { m as createFileRoute, p as lazyRouteComponent } from "../_libs/@tanstack/react-router+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/about-Ct7hbvAS.js
+//#region node_modules/.nitro/vite/services/ssr/assets/about-Q-c-KLA0.js
 var import_jsx_runtime = require_jsx_runtime();
 var $$splitComponentImporter = () => import("./about-hpM9iyx6.mjs");
 var Route = createFileRoute("/about")({
@@ -24,7 +24,7 @@ var Route = createFileRoute("/about")({
 		},
 		{
 			property: "og:url",
-			content: "https://emperorexports.com/about"
+			content: "https://www.emperorexportsandimports.com/about"
 		}
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter, "component")

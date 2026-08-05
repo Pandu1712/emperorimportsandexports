@@ -30,7 +30,7 @@ export const Route = createFileRoute("/products/$id")({
         { property: "og:title", content: `${name} — Emperor Exports & Imports` },
         { property: "og:description", content: desc },
         { property: "og:type", content: "product" },
-        { property: "og:url", content: `https://emperorexports.com/products/${loaderData?.id || ""}` },
+        { property: "og:url", content: `https://www.emperorexportsandimports.com/products/${loaderData?.id || ""}` },
       ],
     };
   },
@@ -54,7 +54,7 @@ function ProductDetailPage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": product.name,
-    "image": `https://emperorexports.com${product.image}`,
+    "image": `https://www.emperorexportsandimports.com${product.image}`,
     "description": product.description,
     "brand": {
       "@type": "Brand",
@@ -65,7 +65,7 @@ function ProductDetailPage() {
       "priceCurrency": "USD",
       "price": "Contact for quote",
       "availability": "https://schema.org/InStock",
-      "url": `https://emperorexports.com/products/${product.id}`
+      "url": `https://www.emperorexportsandimports.com/products/${product.id}`
     },
     "additionalProperty": product.specs.map(s => ({
       "@type": "PropertyValue",

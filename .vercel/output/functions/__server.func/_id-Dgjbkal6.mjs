@@ -1,7 +1,7 @@
 import { t as products } from "./_ssr/products-DKyzeAFx.mjs";
 import { j as notFound, m as createFileRoute, p as lazyRouteComponent } from "./_libs/@tanstack/react-router+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/_id-GvqDpCc-.js
-var $$splitComponentImporter = () => import("./_id-CUvBwWbt.mjs");
+//#region node_modules/.nitro/vite/services/ssr/assets/_id-Dgjbkal6.js
+var $$splitComponentImporter = () => import("./_id-CWXN5E2x.mjs");
 var Route = createFileRoute("/products/$id")({
 	loader: ({ params }) => {
 		const product = products.find((p) => p.id === params.id);
@@ -36,7 +36,7 @@ var Route = createFileRoute("/products/$id")({
 			},
 			{
 				property: "og:url",
-				content: `https://emperorexports.com/products/${loaderData?.id || ""}`
+				content: `https://www.emperorexportsandimports.com/products/${loaderData?.id || ""}`
 			}
 		] };
 	},

@@ -20,7 +20,7 @@ export const Route = createFileRoute("/about")({
         property: "og:description",
         content: "A trusted Indian agri-export house rooted in Andhra Pradesh.",
       },
-      { property: "og:url", content: "https://emperorexports.com/about" },
+      { property: "og:url", content: "https://www.emperorexportsandimports.com/about" },
     ],
   }),
   component: About,

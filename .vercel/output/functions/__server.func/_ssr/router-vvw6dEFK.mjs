@@ -1,11 +1,11 @@
 import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react, t as QueryClientProvider } from "../_libs/react+tanstack__react-query.mjs";
 import { _ as useRouter, c as HeadContent, d as createRouter, f as Outlet, g as Link, h as createRootRouteWithContext, l as useLocation, m as createFileRoute, p as lazyRouteComponent, s as Scripts } from "../_libs/@tanstack/react-router+[...].mjs";
-import { t as Route$9 } from "../_id-GvqDpCc-.mjs";
+import { t as Route$9 } from "../_id-Dgjbkal6.mjs";
 import { E as FileText, I as ArrowUp, _ as Mail, b as LayoutGrid, f as Phone, g as MapPin, t as X, w as Globe } from "../_libs/lucide-react.mjs";
-import { n as Route$10 } from "./about-Ct7hbvAS.mjs";
+import { n as Route$10 } from "./about-Q-c-KLA0.mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-9WSI_3UD.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-vvw6dEFK.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var styles_default = "/assets/styles-DB1b8fzb.css";
@@ -398,11 +398,11 @@ var Route$8 = createRootRouteWithContext()({
 			},
 			{
 				property: "og:url",
-				content: "https://emperorexports.com"
+				content: "https://www.emperorexportsandimports.com"
 			},
 			{
 				property: "og:image",
-				content: "https://emperorexports.com/logo-final.png"
+				content: "https://www.emperorexportsandimports.com/logo-final.png"
 			},
 			{
 				name: "twitter:card",
@@ -418,7 +418,7 @@ var Route$8 = createRootRouteWithContext()({
 			},
 			{
 				name: "twitter:image",
-				content: "https://emperorexports.com/logo-final.png"
+				content: "https://www.emperorexportsandimports.com/logo-final.png"
 			}
 		],
 		links: [
@@ -491,7 +491,7 @@ function RootComponent() {
 		})
 	});
 }
-var $$splitComponentImporter$7 = () => import("./routes-r8-KM_EN.mjs");
+var $$splitComponentImporter$7 = () => import("./routes-BQKPjKNi.mjs");
 var Route$7 = createFileRoute("/")({
 	head: () => ({ meta: [
 		{ title: "Emperor Exports & Imports — Premium Indian Agri Exporter" },
@@ -536,12 +536,12 @@ var Route$6 = createFileRoute("/blog")({
 		},
 		{
 			property: "og:url",
-			content: "https://emperorexports.com/blog"
+			content: "https://www.emperorexportsandimports.com/blog"
 		}
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$6, "component")
 });
-var $$splitComponentImporter$5 = () => import("./certifications-CE7a3Kyl.mjs");
+var $$splitComponentImporter$5 = () => import("./certifications-CgqVyijx.mjs");
 var Route$5 = createFileRoute("/certifications")({
 	head: () => ({ meta: [
 		{ title: "Certifications — Emperor Exports & Imports" },
@@ -563,7 +563,7 @@ var Route$5 = createFileRoute("/certifications")({
 		},
 		{
 			property: "og:url",
-			content: "https://emperorexports.com/certifications"
+			content: "https://www.emperorexportsandimports.com/certifications"
 		}
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$5, "component")
@@ -590,7 +590,7 @@ var Route$4 = createFileRoute("/contact")({
 		},
 		{
 			property: "og:url",
-			content: "https://emperorexports.com/contact"
+			content: "https://www.emperorexportsandimports.com/contact"
 		}
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$4, "component")
@@ -617,12 +617,12 @@ var Route$3 = createFileRoute("/export-process")({
 		},
 		{
 			property: "og:url",
-			content: "https://emperorexports.com/export-process"
+			content: "https://www.emperorexportsandimports.com/export-process"
 		}
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$3, "component")
 });
-var $$splitComponentImporter$2 = () => import("./markets-9QzqRohB.mjs");
+var $$splitComponentImporter$2 = () => import("./markets-B1pJKLRp.mjs");
 var Route$2 = createFileRoute("/markets")({
 	head: () => ({ meta: [
 		{ title: "Markets We Serve — Emperor Exports & Imports" },
@@ -644,14 +644,14 @@ var Route$2 = createFileRoute("/markets")({
 		},
 		{
 			property: "og:url",
-			content: "https://emperorexports.com/markets"
+			content: "https://www.emperorexportsandimports.com/markets"
 		}
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$2, "component")
 });
 var $$splitComponentImporter$1 = () => import("./products-C7F03LXy.mjs");
 var Route$1 = createFileRoute("/products")({ component: lazyRouteComponent($$splitComponentImporter$1, "component") });
-var $$splitComponentImporter = () => import("./products-DeH09Jcg.mjs");
+var $$splitComponentImporter = () => import("./products-kD-iozez.mjs");
 var Route = createFileRoute("/products/")({
 	head: () => ({ meta: [
 		{ title: "Products — Emperor Exports & Imports" },
@@ -673,7 +673,7 @@ var Route = createFileRoute("/products/")({
 		},
 		{
 			property: "og:url",
-			content: "https://emperorexports.com/products"
+			content: "https://www.emperorexportsandimports.com/products"
 		}
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter, "component")

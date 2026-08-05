@@ -32,7 +32,7 @@ export const Route = createFileRoute("/blog")({
       },
       { property: "og:title", content: "Emperor Exports Blog" },
       { property: "og:description", content: "Perspectives on Indian agricultural trade." },
-      { property: "og:url", content: "https://emperorexports.com/blog" },
+      { property: "og:url", content: "https://www.emperorexportsandimports.com/blog" },
     ],
   }),
   component: Blog,

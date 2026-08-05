@@ -30,7 +30,7 @@ export const Route = createFileRoute("/export-process")({
       },
       { property: "og:title", content: "Our Export Process" },
       { property: "og:description", content: "Farm to port to your warehouse — how we ship." },
-      { property: "og:url", content: "https://emperorexports.com/export-process" },
+      { property: "og:url", content: "https://www.emperorexportsandimports.com/export-process" },
     ],
   }),
   component: ExportProcess,

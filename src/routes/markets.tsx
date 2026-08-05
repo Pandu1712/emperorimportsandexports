@@ -34,7 +34,7 @@ export const Route = createFileRoute("/markets")({
       },
       { property: "og:title", content: "Markets We Serve" },
       { property: "og:description", content: "Global reach across 25+ countries." },
-      { property: "og:url", content: "https://emperorexports.com/markets" },
+      { property: "og:url", content: "https://www.emperorexportsandimports.com/markets" },
     ],
   }),
   component: Markets,

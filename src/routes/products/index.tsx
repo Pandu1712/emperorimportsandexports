@@ -21,7 +21,7 @@ export const Route = createFileRoute("/products/")({
         property: "og:description",
         content: "Premium Indian spices, fresh produce and staples for global buyers.",
       },
-      { property: "og:url", content: "https://emperorexports.com/products" },
+      { property: "og:url", content: "https://www.emperorexportsandimports.com/products" },
     ],
   }),
   component: ProductsPage,
