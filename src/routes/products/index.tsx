@@ -12,11 +12,16 @@ export const Route = createFileRoute("/products/")({
         content:
           "Explore our export catalogue: turmeric powder, coconuts, non-basmati rice, bananas, elephant foot yam, green chillies, drumsticks, and premium jaggery powder.",
       },
+      {
+        name: "keywords",
+        content: "turmeric powder, fresh coconuts, non-basmati rice, banana Cavendish, elephant foot yam, green chillies Guntur, moringa drumsticks, jaggery powder chemical free, indian spices wholesale"
+      },
       { property: "og:title", content: "Our Products — Emperor Exports & Imports" },
       {
         property: "og:description",
         content: "Premium Indian spices, fresh produce and staples for global buyers.",
       },
+      { property: "og:url", content: "https://emperorexports.com/products" },
     ],
   }),
   component: ProductsPage,

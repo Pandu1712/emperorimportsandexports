@@ -11,11 +11,16 @@ export const Route = createFileRoute("/certifications")({
         content:
           "IEC, GSTIN, FSSAI, APEDA and phytosanitary certifications backing Emperor Exports & Imports.",
       },
+      {
+        name: "keywords",
+        content: "IEC certification, APEDA registration, GSTIN, FSSAI licence, indian export credentials, phytosanitary certificate, agricultural certification india"
+      },
       { property: "og:title", content: "Certifications & Compliance" },
       {
         property: "og:description",
         content: "Recognised exporter with all statutory Indian export credentials.",
       },
+      { property: "og:url", content: "https://emperorexports.com/certifications" },
     ],
   }),
   component: Certifications,

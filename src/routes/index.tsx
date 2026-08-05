@@ -27,6 +27,11 @@ export const Route = createFileRoute("/")({
         content:
           "Turmeric, coconuts, rice, bananas, yam, green chillies, drumsticks, and jaggery powder exported worldwide from Vijayawada, India.",
       },
+      {
+        name: "keywords",
+        content:
+          "agri export house, indian spices exporter, fresh vegetables supplier, buy non basmati rice india, ganesh imports exports, turmeric powder wholesale, fresh green chillies guntur, cavity banana export, elephant foot yam export india, moringa drumsticks exporter, organic jaggery powder wholesale"
+      },
       { property: "og:title", content: "Emperor Exports & Imports" },
       {
         property: "og:description",
@@ -37,9 +42,71 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
+const companySchema = {
+  "@context": "https://schema.org",
+  "@type": "Wholesaler",
+  "name": "Emperor Exports & Imports",
+  "alternateName": "Emperor Imports & Exports",
+  "url": "https://emperorexports.com",
+  "logo": "https://emperorexports.com/logo-final.png",
+  "image": "https://emperorexports.com/logo-final.png",
+  "description": "Premium Indian agricultural exports — spices, fresh produce and staples for global buyers. Sourcing India's finest agricultural produce from Vijayawada and Srikakulam.",
+  "telephone": "+919010444415",
+  "email": "info@emperorexports.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "D. No 59A-5-18/2, 3rd Cross Road, New P&T Colony - II",
+    "addressLocality": "Vijayawada",
+    "addressRegion": "Andhra Pradesh",
+    "postalCode": "520008",
+    "addressCountry": "IN"
+  },
+  "location": [
+    {
+      "@type": "Place",
+      "name": "Vijayawada Head Office",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "D. No 59A-5-18/2, 3rd Cross Road, New P&T Colony - II",
+        "addressLocality": "Vijayawada",
+        "addressRegion": "Andhra Pradesh",
+        "postalCode": "520008",
+        "addressCountry": "IN"
+      }
+    },
+    {
+      "@type": "Place",
+      "name": "Srikakulam Manufacturing Unit",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "First Floor, Radha, Krishna Nagar Colony, Visakha B Colony",
+        "addressLocality": "Srikakulam",
+        "addressRegion": "Andhra Pradesh",
+        "postalCode": "532001",
+        "addressCountry": "IN"
+      }
+    }
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "G. Ganesh"
+  },
+  "areaServed": "Worldwide",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+919010444415",
+    "contactType": "sales",
+    "availableLanguage": ["English", "Hindi", "Telugu"]
+  }
+};
+
 function Home() {
   return (
     <div className="animate-fade-in-up">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(companySchema) }}
+      />
       {/* Hero */}
       <section className="relative overflow-hidden bg-[#021008] text-white">
         {/* Background Image */}

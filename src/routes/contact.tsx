@@ -11,11 +11,16 @@ export const Route = createFileRoute("/contact")({
         content:
           "Get in touch with Emperor Exports & Imports in Vijayawada. Call +91 90104 44415 or send an enquiry.",
       },
+      {
+        name: "keywords",
+        content: "contact emperor exports, phone number +91 90104 44415, email info@emperorexports.com, vijayawada office, srikakulam manufacturing unit, buy indian spices online"
+      },
       { property: "og:title", content: "Contact Emperor Exports" },
       {
         property: "og:description",
         content: "Send us your requirement — we respond within 24 hours.",
       },
+      { property: "og:url", content: "https://emperorexports.com/contact" },
     ],
   }),
   component: Contact,

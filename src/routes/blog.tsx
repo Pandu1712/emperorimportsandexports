@@ -26,8 +26,13 @@ export const Route = createFileRoute("/blog")({
         name: "description",
         content: "Insights on Indian agri-exports, market trends, seasonality and buyer guides.",
       },
+      {
+        name: "keywords",
+        content: "agri export news, indian agriculture market trends, spice trading tips, turmeric health benefits, banana market insights, rice trade updates"
+      },
       { property: "og:title", content: "Emperor Exports Blog" },
       { property: "og:description", content: "Perspectives on Indian agricultural trade." },
+      { property: "og:url", content: "https://emperorexports.com/blog" },
     ],
   }),
   component: Blog,

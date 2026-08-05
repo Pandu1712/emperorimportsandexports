@@ -11,11 +11,16 @@ export const Route = createFileRoute("/about")({
         content:
           "Learn about Emperor Exports & Imports, a Vijayawada-based agri-export house led by proprietor G. Ganesh.",
       },
+      {
+        name: "keywords",
+        content: "about emperor exports, G. Ganesh, indian agricultural trade company, ethical sourcing india, vijayawada export house, andhra pradesh agri export"
+      },
       { property: "og:title", content: "About Emperor Exports & Imports" },
       {
         property: "og:description",
         content: "A trusted Indian agri-export house rooted in Andhra Pradesh.",
       },
+      { property: "og:url", content: "https://emperorexports.com/about" },
     ],
   }),
   component: About,

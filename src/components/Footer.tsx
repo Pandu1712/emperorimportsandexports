@@ -57,7 +57,7 @@ export function Footer() {
             </li>
             <li className="flex gap-3">
               <Mail size={16} className="text-gold shrink-0 mt-0.5" />
-              <a href="mailto:info@emperorexports.in">info@emperorexports.in</a>
+              <a href="mailto:info@emperorexports.com">info@emperorexports.com</a>
             </li>
           </ul>
         </div>

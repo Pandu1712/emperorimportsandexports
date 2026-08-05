@@ -28,8 +28,13 @@ export const Route = createFileRoute("/markets")({
         content:
           "Emperor Exports ships to importers across the Middle East, Southeast Asia, Europe, Africa and beyond.",
       },
+      {
+        name: "keywords",
+        content: "agricultural markets, export regions india, spice buyers middle east, coco import europe, food importers southeast asia, global agricultural network"
+      },
       { property: "og:title", content: "Markets We Serve" },
       { property: "og:description", content: "Global reach across 25+ countries." },
+      { property: "og:url", content: "https://emperorexports.com/markets" },
     ],
   }),
   component: Markets,

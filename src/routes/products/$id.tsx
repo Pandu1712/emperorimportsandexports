@@ -12,15 +12,28 @@ export const Route = createFileRoute("/products/$id")({
     }
     return product;
   },
-  head: ({ loaderData }) => ({
-    meta: [
-      { title: `${loaderData?.name || "Product Details"} — Emperor Exports & Imports` },
-      {
-        name: "description",
-        content: loaderData?.description || "Explore product specifications, origin and packaging details.",
-      },
-    ],
-  }),
+  head: ({ loaderData }) => {
+    const name = loaderData?.name || "Product Details";
+    const desc = loaderData?.description || "Explore product specifications, origin and packaging details.";
+    const origin = loaderData?.origin || "India";
+    return {
+      meta: [
+        { title: `${name} — Emperor Exports & Imports` },
+        {
+          name: "description",
+          content: desc,
+        },
+        {
+          name: "keywords",
+          content: `${name}, premium ${name}, buy ${name} wholesale, dynamic agri export, indian ${name} exporter, ${origin} agricultural products, specifications of ${name}`
+        },
+        { property: "og:title", content: `${name} — Emperor Exports & Imports` },
+        { property: "og:description", content: desc },
+        { property: "og:type", content: "product" },
+        { property: "og:url", content: `https://emperorexports.com/products/${loaderData?.id || ""}` },
+      ],
+    };
+  },
   component: ProductDetailPage,
 });
 
@@ -37,8 +50,40 @@ function ProductDetailPage() {
     `Hello Emperor Exports, I'd like a quote for ${product.name}.`
   )}`;
 
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": product.name,
+    "image": `https://emperorexports.com${product.image}`,
+    "description": product.description,
+    "brand": {
+      "@type": "Brand",
+      "name": "Emperor Exports & Imports"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "USD",
+      "price": "Contact for quote",
+      "availability": "https://schema.org/InStock",
+      "url": `https://emperorexports.com/products/${product.id}`
+    },
+    "additionalProperty": product.specs.map(s => ({
+      "@type": "PropertyValue",
+      "name": s.label,
+      "value": s.value
+    })),
+    "countryOfOrigin": {
+      "@type": "Country",
+      "name": product.origin
+    }
+  };
+
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 md:py-10 animate-fade-in-up">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
       {/* Back Button */}
       <Link
         to="/products"

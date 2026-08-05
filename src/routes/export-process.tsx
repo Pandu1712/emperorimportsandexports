@@ -24,8 +24,13 @@ export const Route = createFileRoute("/export-process")({
         content:
           "Step-by-step export process from farm sourcing to doorstep delivery of Indian agricultural produce.",
       },
+      {
+        name: "keywords",
+        content: "how to import spices from india, agri export process, agricultural logistics india, custom clearance india, export documentation india, door to door agricultural delivery"
+      },
       { property: "og:title", content: "Our Export Process" },
       { property: "og:description", content: "Farm to port to your warehouse — how we ship." },
+      { property: "og:url", content: "https://emperorexports.com/export-process" },
     ],
   }),
   component: ExportProcess,

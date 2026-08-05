@@ -4,10 +4,11 @@ import {
   Link,
   createRootRouteWithContext,
   useRouter,
+  useLocation,
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
-import { type ReactNode } from "react";
+import { type ReactNode, useEffect } from "react";
 
 import appCss from "../styles.css?url";
 import { Header } from "@/components/Header";
@@ -80,7 +81,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "Emperor Exports & Imports supplies turmeric powder, coconuts, non-basmati rice, bananas, elephant foot yam and green chillies to global markets from Vijayawada, India.",
       },
+      {
+        name: "keywords",
+        content:
+          "emperor exports, indian agri exporter, agricultural exports india, turmeric powder exporter, green chillies export, fresh coconuts supplier, non-basmati rice, banana exporter, vijayawada, srikakulam, ganesh imports exports, agricultural import export"
+      },
       { name: "author", content: "Emperor Exports & Imports" },
+      { name: "google-site-verification", content: "YOUR_GOOGLE_SITE_VERIFICATION_CODE_HERE" },
       { property: "og:title", content: "Emperor Exports & Imports" },
       {
         property: "og:description",
@@ -88,7 +95,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Premium Indian agricultural exports — spices, fresh produce and staples for global buyers.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://emperorexports.com" },
+      { property: "og:image", content: "https://emperorexports.com/logo-final.png" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Emperor Exports & Imports" },
+      { name: "twitter:description", content: "Premium Indian agricultural exports for global buyers." },
+      { name: "twitter:image", content: "https://emperorexports.com/logo-final.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -112,6 +124,21 @@ function RootShell({ children }: { children: ReactNode }) {
     <html lang="en">
       <head>
         <HeadContent />
+        {/* Google Analytics Global Site Tag (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-HH7BGBEHTC"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-HH7BGBEHTC', { page_path: window.location.pathname });
+            `,
+          }}
+        />
       </head>
       <body>
         {children}
@@ -123,6 +150,15 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && (window as any).gtag) {
+      (window as any).gtag("config", "G-HH7BGBEHTC", {
+        page_path: location.pathname,
+      });
+    }
+  }, [location.pathname]);
 
   return (
     <QueryClientProvider client={queryClient}>
